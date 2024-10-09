@@ -88,7 +88,14 @@
             transition: color 0.5s;
         }
 
+        .projects-container {
+            display: flex;
+            justify-content: center; /* Center the cards horizontally */
+            gap: 20px; /* Space between the cards */
+        }
+
         .github-card {
+            flex: 1; /* Allow the cards to grow equally */
             padding: 20px; /* Increased padding for better spacing */
             border-radius: 10px;
             width: 100%;
@@ -190,10 +197,17 @@
         
         <div class="projects-section">
             <h3>Our Projects</h3>
-            <div class="github-card">
-                <h4>CUDA Version Manager</h4>
-                <p>A developer-centric tool to switch between CUDA versions seamlessly, simplifying environment configuration for GPU-based projects.</p>
-                <a href="https://github.com/atominfra/cvm" target="_blank">View on GitHub &rarr;</a>
+            <div class="projects-container">
+                <div class="github-card">
+                    <h4>CUDA Version Manager</h4>
+                    <p>Seamless CUDA version switcher for easy GPU project configuration.</p>
+                    <a href="https://github.com/atominfra/cvm" target="_blank">View on GitHub &rarr;</a>
+                </div>
+                <div class="github-card">
+                    <h4>Jupyter Environment Manager</h4>
+                    <p>Docker Compose based solution that allows you to easily clone jupyter environment</p>
+                    <a href="https://github.com/atominfra/cvm" target="_blank">View on GitHub &rarr;</a>
+                </div>
             </div>
         </div>
     </div>
