@@ -16,31 +16,47 @@
       gtag('config', 'G-BNZY66YLX0');
     </script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            /* Color Palette */
+            --bg-color-light: #EEEEEE; /* Light Background */
+            --text-color-light: #222831; /* Light Text */
+            --button-bg-light: #00ADB5; /* Light Button Background */
+            --button-text-light: #222831; /* Light Button Text */
+
+            --bg-color-dark: #222831; /* Dark Background */
+            --text-color-dark: #EEEEEE; /* Dark Text */
+            --button-bg-dark: #00ADB5; /* Dark Button Background */
+            --button-text-dark: #222831; /* Dark Button Text */
+            --accent-color-dark: #393E46; /* Dark Accent */
         }
 
         body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background: linear-gradient(135deg, #6B73FF, #000DFF);
-            color: #fff;
+            transition: background 0.5s, color 0.5s;
         }
 
         .container {
             text-align: center;
-            max-width: 700px;
-            padding: 20px;
+            max-width: 800px;
+            padding: 40px 20px;
+        }
+
+        h1, h2 {
+            margin: 0;
+            padding: 0;
+            transition: color 0.5s;
         }
 
         h1 {
             font-size: 4rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -48,48 +64,161 @@
 
         h2 {
             font-size: 2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
+            margin-bottom: 2rem; /* Reduced bottom margin */
+            opacity: 0.8;
         }
 
         .cta-button {
             text-decoration: none;
             padding: 15px 30px;
-            background-color: #FF6F61;
-            color: white;
             border-radius: 50px;
             font-size: 1.2rem;
             font-weight: bold;
             transition: all 0.3s ease;
             display: inline-block;
+            margin-bottom: 2rem; /* Increased margin bottom */
         }
 
-        .cta-button:hover {
-            background-color: #ff4740;
-            transform: scale(1.05);
+        /* Project Section */
+        .projects-section h3 {
+            font-size: 2rem;
+            margin-bottom: 2rem; /* Reduced bottom margin */
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.5s;
         }
 
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
+        .github-card {
+            padding: 20px; /* Increased padding for better spacing */
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto 30px; /* Increased bottom margin */
+            transition: all 0.3s ease;
+            background: var(--bg-color-light); /* Ensure consistent background */
+            border: 1px solid var(--button-bg-light); /* Added border for better separation */
+        }
 
-            h2 {
-                font-size: 1.5rem;
-            }
+        .github-card:hover {
+            transform: translateY(-5px);
+        }
 
-            .cta-button {
-                padding: 10px 20px;
-                font-size: 1rem;
-            }
+        .github-card h4 {
+            font-size: 1.8rem;
+            margin: 0 0 10px; /* Reduced top margin, added bottom margin */
+        }
+
+        .github-card p {
+            font-size: 1.1rem;
+            margin: 10px 0 15px; /* Added top margin, adjusted bottom margin */
+            opacity: 0.8;
+        }
+
+        .github-card a {
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            color: var(--button-text-light); /* Use defined text color */
+            background: var(--button-bg-light); /* Use defined button background */
+            padding: 10px 15px; /* Added padding for button effect */
+            border-radius: 5px; /* Rounded corners */
+            display: inline-block; /* Ensured link behaves like a button */
+            margin-top: 10px; /* Added top margin for spacing */
+        }
+
+        /* Theme-specific styling */
+        body.light {
+            background: var(--bg-color-light);
+            color: var(--text-color-light);
+        }
+
+        body.dark {
+            background: var(--bg-color-dark);
+            color: var(--text-color-dark);
+        }
+
+        body.light .cta-button {
+            background: var(--button-bg-light);
+            color: var(--button-text-light);
+        }
+
+        body.dark .cta-button {
+            background: var(--button-bg-dark);
+            color: var(--button-text-dark);
+        }
+
+        body.light .github-card {
+            background: var(--bg-color-light);
+            border: 1px solid var(--button-bg-light);
+        }
+
+        body.dark .github-card {
+            background: var(--accent-color-dark);
+            border: 1px solid var(--button-text-dark);
+        }
+
+        /* Theme Toggle Button */
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--button-bg-dark);
+            color: var(--button-text-dark);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        body.light .theme-toggle {
+            background: var(--button-bg-light);
+            color: var(--button-text-light);
         }
     </style>
 </head>
 <body>
+    <div class="theme-toggle" id="theme-toggle">&#9728;</div>
+
     <div class="container">
         <h1>Atom Infra</h1>
         <h2>Democratizing building efficient data centers focused on GPU Needs</h2>
-        <a href="" class="cta-button">Reach out to us at hello@atominfra.com</a>
+        <a href="mailto:hello@atominfra.com" class="cta-button">Reach out to us at hello@atominfra.com</a>
+        
+        <div class="projects-section">
+            <h3>Our Projects</h3>
+            <div class="github-card">
+                <h4>CUDA Version Manager</h4>
+                <p>A developer-centric tool to switch between CUDA versions seamlessly, simplifying environment configuration for GPU-based projects.</p>
+                <a href="https://github.com/atominfra/cvm" target="_blank">View on GitHub &rarr;</a>
+            </div>
+        </div>
     </div>
+
+    <script>
+        // Set the initial theme based on user preference or localStorage
+        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const storedTheme = localStorage.getItem('theme');
+        const initialTheme = storedTheme ? storedTheme : (userPrefersDark ? 'dark' : 'light');
+
+        document.body.classList.add(initialTheme);
+
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.body.classList.contains('light') ? 'light' : 'dark';
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.body.classList.replace(currentTheme, newTheme);
+            localStorage.setItem('theme', newTheme);
+
+            themeToggle.innerHTML = newTheme === 'light' ? '&#9728;' : '&#9790;';
+        });
+
+        // Update the icon based on the initial theme
+        themeToggle.innerHTML = initialTheme === 'light' ? '&#9728;' : '&#9790;';
+    </script>
 </body>
 </html>
