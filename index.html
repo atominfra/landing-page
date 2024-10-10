@@ -15,7 +15,7 @@
     
       gtag('config', 'G-BNZY66YLX0');
     </script>
-    <style>
+   <style>
         :root {
             /* Color Palette */
             --bg-color-light: #EEEEEE; /* Light Background */
@@ -30,6 +30,12 @@
             --accent-color-dark: #393E46; /* Dark Accent */
         }
 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -38,14 +44,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh; /* Occupies full viewport height */
+            overflow: hidden; /* Prevents content overflow */
             transition: background 0.5s, color 0.5s;
         }
 
         .container {
             text-align: center;
             max-width: 800px;
-            padding: 40px 20px;
+            padding: 20px;
+            overflow: hidden; /* Prevent container overflow */
         }
 
         h1, h2 {
@@ -56,33 +64,33 @@
 
         h1 {
             font-size: 4rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
             font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
         }
 
         h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem; /* Reduced bottom margin */
+            font-size: 1.8rem;
+            margin-bottom: 1.8rem; /* Reduced bottom margin */
             opacity: 0.8;
         }
 
         .cta-button {
             text-decoration: none;
-            padding: 15px 30px;
+            padding: 12px 24px;
             border-radius: 50px;
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: bold;
             transition: all 0.3s ease;
             display: inline-block;
-            margin-bottom: 2rem; /* Increased margin bottom */
+            margin-bottom: 1.5rem; /* Increased margin bottom */
         }
 
         /* Project Section */
         .projects-section h3 {
-            font-size: 2rem;
-            margin-bottom: 2rem; /* Reduced bottom margin */
+            font-size: 1.6rem;
+            margin-bottom: 1.8rem; /* Reduced bottom margin */
             font-weight: bold;
             text-transform: uppercase;
             transition: color 0.5s;
@@ -112,12 +120,12 @@
 
         .github-card h4 {
             font-size: 1.8rem;
-            margin: 0 0 10px; /* Reduced top margin, added bottom margin */
-        }
+            margin: 0 0 10px; 
+            }
 
         .github-card p {
-            font-size: 1.1rem;
-            margin: 10px 0 15px; /* Added top margin, adjusted bottom margin */
+            font-size: 1rem;
+            margin: 10px 0 15px;
             opacity: 0.8;
         }
 
@@ -127,10 +135,10 @@
             transition: color 0.3s ease;
             color: var(--button-text-light); /* Use defined text color */
             background: var(--button-bg-light); /* Use defined button background */
-            padding: 10px 15px; /* Added padding for button effect */
-            border-radius: 5px; /* Rounded corners */
-            display: inline-block; /* Ensured link behaves like a button */
-            margin-top: 10px; /* Added top margin for spacing */
+            padding: 10px 12px; 
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
         }
 
         /* Theme-specific styling */
@@ -184,6 +192,101 @@
         body.light .theme-toggle {
             background: var(--button-bg-light);
             color: var(--button-text-light);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            .cta-button {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+
+            .github-card {
+                max-width: 90%;  
+            }
+
+            .projects-container {
+                flex-direction: column;  
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+            }
+
+            .cta-button {
+                font-size: 0.75rem;
+                padding: 6px 12px;
+            }
+
+            .github-card h4 {
+                font-size: 1.2rem;
+            }
+
+            .github-card p {
+                font-size: 0.85rem;
+            }
+
+            .github-card a {
+                font-size: 0.8rem;
+                padding: 8px 10px;
+            }
+
+            .theme-toggle {
+                top: 15px;
+                right: 15px;
+                width: 35px;
+                height: 35px;
+            }
+        }
+ 
+        @media (max-width: 375px) {
+            h1 {
+                font-size: 1.4rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                font-size: 0.7rem;
+                padding: 5px 10px;
+            }
+
+            .github-card h4 {
+                font-size: 1rem;
+            }
+
+            .github-card p {
+                font-size: 0.75rem;
+            }
+
+            .github-card a {
+                font-size: 0.7rem;
+                padding: 6px 8px;
+            }
+
+            .theme-toggle {
+                top: 12px;
+                right: 12px;
+                width: 30px;
+                height: 30px;
+            }
         }
     </style>
 </head>
