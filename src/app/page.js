@@ -44,34 +44,42 @@ export default function Home() {
         <h2 className="text-4xl font-bold text-center mb-20 text-gray-500">OUR PROJECTS</h2>
         <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
           {/* CUDA Version Manager */}
-          <div className="w-[90%] md:w-[24rem] bg-gray-800 p-6 rounded-lg shadow-lg">
+          <a
+              href="https://github.com/atominfra/cvm"
+              target="_blank"
+            >
+          <div className="w-[90%] md:w-[24rem] bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700">
             <h3 className="text-2xl font-semibold mb-4">CUDA Version Manager</h3>
             <p className="text-gray-400 mb-6">
               Seamless CUDA version switcher for easy GPU project configuration.
             </p>
-            <a
-              href="https://github.com/atominfra/cvm"
-              target="_blank"
+            
+              <button 
               className="inline-block bg-[#009ded] text-white px-4 py-2 rounded-full hover:bg-[#3591c0]"
-            >
-              View on GitHub →
-            </a>
+              
+              >View on GitHub →
+              </button>
           </div>
+            </a>
 
           {/* Jupyter Environment Manager */}
-          <div className="w-[90%] md:w-[24rem] bg-gray-800 p-6 rounded-lg shadow-lg">
+          <a
+              href="https://github.com/atominfra/jupyter-environment-manager"
+              target="_blank"
+            >
+          <div className="w-[90%] md:w-[24rem] bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700">
             <h3 className="text-2xl font-semibold mb-4">Jupyter Environment Manager</h3>
             <p className="text-gray-400 mb-6">
               Docker Compose based solution that allows you to easily clone Jupyter environment.
             </p>
-            <a
-              href="https://github.com/atominfra/jupyter-environment-manager"
-              target="_blank"
+            
+              <button 
               className="inline-block bg-[#009ded] text-white px-4 py-2 rounded-full hover:bg-[#3591c0]"
-            >
-              View on GitHub →
-            </a>
+              
+              >View on GitHub →
+              </button>
           </div>
+            </a>
         </div>
       </section>
 
