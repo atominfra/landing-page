@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
 import { Navbar, Typography } from "@material-tailwind/react";
-import GithubPill from "./GithubPill";
+import SocialPill from "./SocialPill";
 
 
 const NavbarSimple = (props) => {
@@ -30,7 +30,16 @@ const NavbarSimple = (props) => {
             Team
           </a>
         </Typography>
-        <GithubPill/>
+        <Typography
+          as="li"
+          color="blue-gray"
+          className="p-1 font-light"
+        >
+          <a href="#advisors" className="flex items-center text-gray-300 hover:text-white">
+          Advisors
+          </a>
+        </Typography>
+        <SocialPill/>
 
       </ul>
     );
@@ -63,8 +72,10 @@ const NavbarSimple = (props) => {
                 color="transparent"
                 className='my-3 max-w-[100vw] lg:max-w-[89vw]  mx-auto py-3  flex items-center justify-between'
             >
-              <Typography className=" m-4 text-white-900 text-xl md:text-3xl font-bold font-merriweather" >
-                AtomInfra
+              <Typography className=" m-4 text-white-900 text-xl md:text-3xl font-bold font-baloo" >
+                <a href="#" className="flex items-center text-gray-300 hover:text-white">
+                  AtomInfra
+                </a>
               </Typography>
                 <div className="mr-4 hidden lg:block">{navList}</div>
             </Navbar>

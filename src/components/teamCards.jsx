@@ -1,25 +1,29 @@
-// components/TestimonialCard.js
+// components/TeamMemberCard.js
+import React from 'react';
 import Image from 'next/image';
-
-export default function TeamCards() {
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+const TeamMemberCard = ({ name, role, photo, linkedinUrl, githubUrl }) => {
   return (
-    <div className="bg-gray-800 text-white p-6 rounded-lg max-w-sm mx-auto shadow-md">
-      <div className="flex items-center">
-        <Image
-          src="/path/to/image.jpg" // Replace with the correct path
-          alt="Ryan Florence"
-          width={50}
-          height={50}
-          className="rounded-full"
-        />
-        <div className="ml-4">
-          <h4 className="text-lg font-semibold">Ryan Florence</h4>
-          <p className="text-sm text-gray-400">Remix & React Training</p>
+    <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600 ">
+      <div className="bg-gray-800 hover:bg-gray-700 rounded-2xl shadow-lg w-56 p-4 flex flex-col items-center text-center">
+      <div className="mb-6 rounded-full bg-gray-200 p-1 w-32 h-32 flex items-center justify-center">
+          <Image
+            src={photo || '/placeholder-avatar.png'}
+            alt={name}
+            width={120}
+            height={120}
+            className="rounded-full"
+          />
         </div>
+      <h4 className="text-white font-semibold text-lg mb-1">{name}</h4>
+      <p className="text-gray-500 text-sm mb-3">{role}</p>
+      <div className="flex space-x-2">
+        <FaLinkedin size={20} />
       </div>
-      <p className="mt-4 text-gray-300">
-        I feel like an idiot for not using Tailwind CSS until now.
-      </p>
-    </div>
+      </div>
+    </a>
   );
-}
+};
+
+export default TeamMemberCard;

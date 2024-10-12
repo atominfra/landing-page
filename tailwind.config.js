@@ -13,7 +13,8 @@ module.exports = {
       },
       fontFamily: {
         merriweather: ['Merriweather', 'serif'],
-        poppins:['Poppins','serif']
+        poppins:['Poppins','serif'],
+        baloo:['Baloo+Paaji+2','serif']
       },
     },
   },

@@ -4,6 +4,49 @@ import React from 'react';
 import img1 from '@/assets/Karun.jpeg';
 import img2 from '@/assets/shryansh.jpeg';
 import img3 from '@/assets/Piyush.jpeg';
+import img4 from '@/assets/chakshu.jpeg';
+import img5 from '@/assets/ajay.jpeg';
+import TeamMemberCard from '@/components/teamCards';
+import { BiSolidMicrochip } from "react-icons/bi";
+
+const teamMembers = [
+  {
+    name: 'Karun Agarwal',
+    role: 'Founder and CEO',
+    photo: img1,
+    linkedinUrl: 'https://www.linkedin.com/in/singhalkarun/',
+    githubUrl: 'https://github.com/singhalkarun',
+  },
+  {
+    name: 'Piyush Raj',
+    role: 'DevOps Engineer',
+    photo: img3, 
+    linkedinUrl: 'https://www.linkedin.com/in/piyushraj-d3bug/',
+    githubUrl: 'https://github.com/PiyushRaj927/',
+  },
+  {
+    name: 'Shryansh',
+    role: 'Full Stack Engineer',
+    photo: img2,
+    linkedinUrl: 'https://www.linkedin.com/in/shryansh-chaudhary/',
+    githubUrl: 'https://github.com/shryansh107',
+  },
+];
+
+const advisors = [ {
+  name: 'Chakshu Gautam',
+  role: 'Technology Advisor',
+  photo: img4,
+  linkedinUrl: 'https://www.linkedin.com/in/shryansh-chaudhary/',
+  githubUrl: 'https://github.com/shryansh107',
+},
+{
+  name: 'Ajay Tyouharia',
+  role: 'Business Advisor',
+  photo: img5,
+  linkedinUrl: 'https://www.linkedin.com/in/shryansh-chaudhary/',
+  githubUrl: 'https://github.com/shryansh107',
+},]
 
 export default function Home() {
   return (
@@ -14,11 +57,11 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <header className="w-full text-center pt-24 md:pt-44 py-12 h-[75vh] flex flex-col justify-center items-center">
+      <header className="w-full text-center h-[80vh] flex flex-col items-center justify-center  pt-24 md:pt-44 py-12 ">
         <div className='w-[90vw] md:w-[50vw]'>
-          <p className="text-4xl md:text-6xl text-gray-500 font-semibold text-balance font-poppins">
-            <span className='text-white font-extrabold font-merriweather md:text-6xl tracking-normal underline'>Democratizing! </span>   
-            building efficient data centers focused on GPU Needs
+          <p className="text-4xl md:text-6xl text-gray-500 font-semibold text-balance font-baloo">
+            {/* <span className='text-white font-extrabold  md:text-6xl tracking-normal underline'>Democratizing </span>    */}
+            Democratizing AI
           </p>
         </div>
         <a
@@ -30,8 +73,8 @@ export default function Home() {
       </header>
 
       {/* Projects Section */}
-      <section id='projects' className="w-full max-w-6xl mx-auto py-12">
-        <h2 className="text-4xl font-bold text-center mb-8">OUR PROJECTS</h2>
+      <section id='projects' className="w-full h-screen flex flex-col items-center justify-center max-w-6xl mx-auto py-4">
+        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 ">OUR PROJECTS</h2>
         <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
           {/* CUDA Version Manager */}
           <div className="w-[90%] md:w-[24rem] bg-gray-800 p-6 rounded-lg shadow-lg">
@@ -66,66 +109,36 @@ export default function Home() {
       </section>
 
       {/* Team Section */}
-      <section id='team' className="w-full max-w-6xl mx-auto py-12">
-        <h2 className="text-4xl font-bold text-center mb-8">OUR TEAM</h2>
-        <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8">
-          {/* Team Members */}
-          <div className="bg-gray-800 text-white p-6 rounded-lg w-[90%] md:w-[24rem] mx-auto shadow-md">
-            <div className="flex items-center">
-              <Image
-                src={img1}
-                alt="Karun Agarwal"
-                width={50}
-                height={50}
-                className="rounded-full"
+      <section id='team' className="w-full h-screen  flex flex-col items-center justify-center max-w-7xl mx-auto py-12">
+        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 ">Meet Our Team</h2>
+        <div className="flex flex-wrap justify-center gap-8">
+          {teamMembers.map((member, index) => (
+              <TeamMemberCard
+                key={member.name}
+                name={member.name}
+                role={member.role}
+                photo={member.photo}
+                linkedinUrl={member.linkedinUrl}
+                githubUrl={member.githubUrl}
               />
-              <div className="ml-4">
-                <h4 className="text-lg font-semibold">Karun Agarwal</h4>
-                <p className="text-sm text-gray-400">Founder and CEO</p>
-              </div>
-            </div>
-            <p className="mt-4 text-gray-300">
-              Leading with vision, building the future
-            </p>
-          </div>
+          ))}      
+        </div>
+      </section>
 
-          <div className="bg-gray-800 text-white p-6 rounded-lg w-[90%] md:w-[24rem] mx-auto shadow-md">
-            <div className="flex items-center">
-              <Image
-                src={img3} // Replace with the correct path
-                alt="Piyush Raj"
-                width={50}
-                height={50}
-                className="rounded-full"
+      {/* Advisor Section */}
+      <section id='advisors' className="w-full h-screen flex flex-col items-center justify-center max-w-7xl mx-auto py-12">
+        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500">Meet Our Advisors</h2>
+        <div className="flex flex-wrap justify-center gap-8">
+          {advisors.map((member, index) => (
+              <TeamMemberCard
+                key={member.name}
+                name={member.name}
+                role={member.role}
+                photo={member.photo}
+                linkedinUrl={member.linkedinUrl}
+                githubUrl={member.githubUrl}
               />
-              <div className="ml-4">
-                <h4 className="text-lg font-semibold">Piyush Raj</h4>
-                <p className="text-sm text-gray-400">DevOps Engineer</p>
-              </div>
-            </div>
-            <p className="mt-4 text-gray-300">
-              Bridging development and operations for seamless delivery
-            </p>
-          </div>
-
-          <div className="bg-gray-800 text-white p-6 rounded-lg w-[90%] md:w-[24rem] mx-auto shadow-md">
-            <div className="flex items-center">
-              <Image
-                src={img2}
-                alt="Shryansh"
-                width={50}
-                height={50}
-                className="rounded-full"
-              />
-              <div className="ml-4">
-                <h4 className="text-lg font-semibold">Shryansh</h4>
-                <p className="text-sm text-gray-400">Full Stack Engineer</p>
-              </div>
-            </div>
-            <p className="mt-4 text-gray-300">
-              Connecting code, infrastructure, and innovation
-            </p>
-          </div>
+          ))}      
         </div>
       </section>
 
