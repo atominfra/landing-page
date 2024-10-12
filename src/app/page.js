@@ -20,7 +20,7 @@ export default function Home() {
       //   backgroundAttachment: 'fixed', 
       // }}
     >
-      <header className="w-full z-[10] fixed top-0">
+      <header className="w-full z-[10] fixed top-0 bg-gray-900">
         <NavbarSimple whiteNavbar={true} />
       </header>
 
@@ -94,7 +94,7 @@ export default function Home() {
 
       {/* Advisor Section */}
       <section id="advisors" className="w-full min-h-screen relative flex flex-col items-center justify-center py-12">
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4">
+        <div className="relative  w-full max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-20 text-gray-500">Meet Our Advisors</h2>
           <div className="flex flex-wrap justify-center gap-10">
             {advisors.map((member) => (
