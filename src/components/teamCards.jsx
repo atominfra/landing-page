@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 const TeamMemberCard = ({ name, role, photo, linkedinUrl, githubUrl }) => {
   return (
     <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600 ">
-      <div className="bg-gray-800 hover:bg-gray-700 rounded-2xl shadow-lg w-56 p-4 flex flex-col items-center text-center">
+      <div className="bg-gray-800 hover:bg-gray-700 rounded-2xl h-72 shadow-lg w-56 p-4 flex flex-col items-center text-center">
       <div className="mb-6 rounded-full bg-gray-200 p-1 w-32 h-32 flex items-center justify-center">
           <Image
             src={photo || '/placeholder-avatar.png'}
