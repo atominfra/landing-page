@@ -63,7 +63,7 @@ const NavbarSimple = (props) => {
                 color="transparent"
                 className='my-3 max-w-[100vw] lg:max-w-[89vw]  mx-auto py-3  flex items-center justify-between'
             >
-              <Typography className=" m-4 text-white-900 text-3xl font-bold font-merriweather" >
+              <Typography className=" m-4 text-white-900 text-xl md:text-3xl font-bold font-merriweather" >
                 AtomInfra
               </Typography>
                 <div className="mr-4 hidden lg:block">{navList}</div>

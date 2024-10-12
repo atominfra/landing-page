@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import img1 from '@/assets/Karun.jpeg';
 import img2 from '@/assets/shryansh.jpeg';
+import img3 from '@/assets/Piyush.jpeg';
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <header className="w-full text-center pt-24 md:pt-44 py-12 h-[65vh] flex flex-col justify-center items-center">
+      <header className="w-full text-center pt-24 md:pt-44 py-12 h-[75vh] flex flex-col justify-center items-center">
         <div className='w-[90vw] md:w-[50vw]'>
           <p className="text-4xl md:text-6xl text-gray-500 font-semibold text-balance font-poppins">
             <span className='text-white font-extrabold font-merriweather md:text-6xl tracking-normal underline'>Democratizing! </span>   
@@ -22,7 +23,7 @@ export default function Home() {
         </div>
         <a
           href="mailto:hello@atominfra.com"
-          className="mt-6 inline-block bg-[#009ded] text-lg text-white px-6 py-3 rounded-full font-normal hover:bg-teal-600"
+          className="mt-12 inline-block bg-[#009ded] md:text-lg text-white px-6 py-3 rounded-full font-normal hover:bg-teal-600"
         >
           Reach us at <span className='font-bold'>hello@atominfra.com</span>
         </a>
@@ -31,9 +32,9 @@ export default function Home() {
       {/* Projects Section */}
       <section id='projects' className="w-full max-w-6xl mx-auto py-12">
         <h2 className="text-4xl font-bold text-center mb-8">OUR PROJECTS</h2>
-        <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8">
+        <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
           {/* CUDA Version Manager */}
-          <div className="w-full md:w-[24rem] bg-gray-800 p-6 rounded-lg shadow-lg">
+          <div className="w-[90%] md:w-[24rem] bg-gray-800 p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-4">CUDA Version Manager</h3>
             <p className="text-gray-400 mb-6">
               Seamless CUDA version switcher for easy GPU project configuration.
@@ -48,7 +49,7 @@ export default function Home() {
           </div>
 
           {/* Jupyter Environment Manager */}
-          <div className="w-full md:w-[24rem] bg-gray-800 p-6 rounded-lg shadow-lg">
+          <div className=" w-[90%] md:w-[24rem] bg-gray-800 p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-4">Jupyter Environment Manager</h3>
             <p className="text-gray-400 mb-6">
               Docker Compose based solution that allows you to easily clone Jupyter environment.
@@ -91,7 +92,7 @@ export default function Home() {
           <div className="bg-gray-800 text-white p-6 rounded-lg w-[90%] md:w-[24rem] mx-auto shadow-md">
             <div className="flex items-center">
               <Image
-                src='' // Replace with the correct path
+                src={img3} // Replace with the correct path
                 alt="Piyush Raj"
                 width={50}
                 height={50}

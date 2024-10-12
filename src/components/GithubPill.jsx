@@ -5,7 +5,7 @@ import { FaGithub, FaStar } from 'react-icons/fa';
 const GithubPill = () => {
   return (
     <Link 
-    href="https://github.com/yourusername/yourrepo" 
+    href="https://github.com/atominfra" 
     target="_blank" 
     rel="noopener noreferrer"
     className="flex items-center bg-gray-800 text-white rounded-full overflow-hidden hover:bg-gray-700 transition-colors duration-300"
