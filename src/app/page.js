@@ -2,7 +2,6 @@ import NavbarSimple from '@/components/navBar';
 import React from 'react';
 import TeamMemberCard from '@/components/teamCards';
 import teamData from '@/utils/teamData';
-import backgroundImage from '@/assets/blurry-gradient.svg';
 import footerBackgroundImage from '@/assets/layered-waves-footer.svg';
 import Image from 'next/image';
 import ScrollToTopButton from '@/components/ScrollToTopButton';

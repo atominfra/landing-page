@@ -1,8 +1,3 @@
-import img1 from '@/assets/karun.jpeg';
-import img2 from '@/assets/shryansh.jpeg';
-import img3 from '@/assets/piyush.jpeg';
-import img5 from '@/assets/ajay.jpeg';
-import img4 from '@/assets/chakshu.jpeg'
 const teamData = {
   teamMembers: [
     {
