@@ -8,13 +8,13 @@ const teamData = {
     },
     {
       name: 'Piyush Raj',
-      role: 'Founding Engineer, DevOps',
+      role: 'Founding Member, DevOps',
       photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1728836223/piyush_aw5tqf.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/piyushraj-d3bug/',
     },
     {
       name: 'Shryansh',
-      role: 'Founding Engineer, Full Stack',
+      role: 'Founding Member, Full Stack',
       photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1728836215/shryansh_qfjiae.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/shryansh-chaudhary/',
     },
