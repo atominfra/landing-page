@@ -35,7 +35,7 @@ export default function Home() {
         id="projects"
         className="w-full min-h-screen flex flex-col items-center justify-center max-w-6xl mx-auto py-12 px-4"
       >
-        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500">OUR PROJECTS</h2>
+        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">OUR PROJECTS</h2>
         <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
           {/* CUDA Version Manager */}
           <a
@@ -78,7 +78,7 @@ export default function Home() {
         id="team"
         className="w-full min-h-screen flex flex-col items-center justify-center max-w-7xl mx-auto py-12 px-4"
       >
-        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500">Meet Our Team</h2>
+        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Meet Our Team</h2>
         <div className="flex flex-wrap justify-center gap-10">
           {teamMembers.map((member) => (
             <TeamMemberCard
@@ -98,7 +98,7 @@ export default function Home() {
         id="advisors"
         className="w-full min-h-screen flex flex-col items-center justify-center max-w-7xl mx-auto py-12 px-4"
       >
-        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500">Meet Our Advisors</h2>
+        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Meet Our Advisors</h2>
         <div className="flex flex-wrap justify-center gap-10">
           {advisors.map((member) => (
             <TeamMemberCard
