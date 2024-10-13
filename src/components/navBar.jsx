@@ -46,7 +46,8 @@ const NavbarSimple = (props) => {
             AtomInfra
           </a>
         </Typography>
-        <div className="hidden lg:block">{navList}</div>
+        <div className="flex items-center gap-4">
+          <div className="hidden lg:block">{navList}</div>
         <div className="hidden lg:block">
       <SocialPill />
       </div>
@@ -57,7 +58,7 @@ const NavbarSimple = (props) => {
           onClick={() => setOpenDrawer(true)}
         >
           <GiHamburgerMenu />
-        </span>
+        </span></div>
       </Navbar>
 
       {/* Drawer for mobile menu */}
