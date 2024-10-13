@@ -28,14 +28,14 @@ export default function Home() {
       <section className="w-full text-center h-[100vh] flex flex-col items-center justify-center pt-24 md:pt-44 py-12">
         <div className="w-[90vw] md:w-[50vw]">
           <p className="text-4xl md:text-6xl text-gray-500 font-semibold text-balance font-baloo">
-            Democratizing AI
+          Making AI Accessible
           </p>
         </div>
         <a
           href="mailto:hello@atominfra.com"
           className="mt-12 inline-block bg-[#009ded] md:text-lg text-white px-6 py-3 rounded-full font-normal hover:bg-[#3591c0]"
         >
-          Reach us at <span className="font-bold">hello@atominfra.com</span>
+          Reach out to us at <span className="font-bold">hello@atominfra.com</span>
         </a>
       </section>
 
