@@ -18,9 +18,9 @@ const TeamMemberCard = ({ name, role, photo, linkedinUrl, githubUrl }) => {
         </div>
       <h4 className="text-white font-semibold text-lg mb-1">{name}</h4>
       <p className="text-gray-500 text-sm mb-3">{role}</p>
-      <div className="flex space-x-2">
+      {/* <div className="flex space-x-2">
         <FaLinkedin size={20} />
-      </div>
+      </div> */}
       </div>
     </a>
   );
