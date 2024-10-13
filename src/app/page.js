@@ -25,7 +25,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="w-full text-center h-[80vh] flex flex-col items-center justify-center pt-24 md:pt-44 py-12">
+      <section className="w-full text-center h-[100vh] flex flex-col items-center justify-center pt-24 md:pt-44 py-12">
         <div className="w-[90vw] md:w-[50vw]">
           <p className="text-4xl md:text-6xl text-gray-500 font-semibold text-balance font-baloo">
             Democratizing AI
@@ -48,7 +48,7 @@ export default function Home() {
               href="https://github.com/atominfra/cvm"
               target="_blank"
             >
-          <div className="w-[90%] md:w-[24rem] bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700">
+          <div className="w-[90%] md:w-[24rem] bg-gray-800 p-6 rounded-lg shadow-lg  ">
             <h3 className="text-2xl font-semibold mb-4">CUDA Version Manager</h3>
             <p className="text-gray-400 mb-6">
               Seamless CUDA version switcher for easy GPU project configuration.
@@ -67,7 +67,7 @@ export default function Home() {
               href="https://github.com/atominfra/jupyter-environment-manager"
               target="_blank"
             >
-          <div className="w-[90%] md:w-[24rem] bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700">
+          <div className="w-[90%] md:w-[24rem] bg-gray-800 p-6 rounded-lg shadow-lg  ">
             <h3 className="text-2xl font-semibold mb-4">Jupyter Environment Manager</h3>
             <p className="text-gray-400 mb-6">
               Docker Compose based solution that allows you to easily clone Jupyter environment.
@@ -132,7 +132,7 @@ export default function Home() {
         </div>
       </section>
 
-      <ScrollToTopButton />
+      {/* <ScrollToTopButton /> */}
 
     </div>
   );
