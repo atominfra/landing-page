@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
-
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import Script from 'next/script';
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -20,9 +21,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+       <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-BNZY66YLX0"
+        ></Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+         <GoogleAnalytics />
         {children}
       </body>
     </html>
