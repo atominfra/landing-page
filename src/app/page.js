@@ -19,7 +19,7 @@ export default function Home() {
       <section className="w-full text-center h-screen flex flex-col items-center justify-center pt-24 md:pt-44 py-12 px-4">
         <div className="w-[90vw] md:w-[50vw]">
           <p className="text-4xl md:text-6xl text-gray-500 font-semibold text-balance font-baloo">
-            Making AI Accessible
+            Making <b>AI</b> Accessible
           </p>
         </div>
         <a
@@ -28,6 +28,21 @@ export default function Home() {
         >
           Reach out to us at <span className="font-bold">hello@atominfra.com</span>
         </a>
+      </section>
+
+      {/*Coming Soon section*/}
+      <section
+        id="coming-soon"
+        className="w-full min-h-screen flex flex-col items-center justify-center max-w-6xl mx-auto py-12 px-4"
+      >
+        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Coming Soon</h2>
+        <div className="bg-[rgba(30,39,56,255)] p-6 rounded-lg shadow-lg min-h-52 transition-transform transform  flex flex-col justify-evenly">
+          <img src="https://res.cloudinary.com/dy8hx2xrj/image/upload/v1728886952/cloud-lab-high-resolution-logo-transparent_1_gflrvy.png" 
+          className="object-contain h-96 w-96"/>
+          <h3 className="text-2xl font-semibold mb-4">AI Cloud lab</h3>
+          <p className="text-gray-400 mb-6">Seamless AI development, deployment and monitoring<br/>
+          in Cloud all through one interface!</p>
+        </div>
       </section>
 
       {/* Projects Section */}
