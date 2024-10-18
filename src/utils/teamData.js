@@ -37,6 +37,11 @@ const teamData = {
       role: 'Founder, Zapphire',
       photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1728836233/ajay_jjp6yg.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/ajay-tyouharia/',
+    },{
+      name: 'Rahul Kulkarni',
+      role: 'Chief Technologist, Samagra',
+      photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1729233201/rahulKulkarni_zqdd9r.jpg',
+      linkedinUrl: 'https://www.linkedin.com/in/rahul10100/',
     },
   ],
 };
