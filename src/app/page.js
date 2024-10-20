@@ -5,6 +5,7 @@ import teamData from '@/utils/teamData';
 import footerBackgroundImage from '@/assets/layered-waves-footer.svg';
 import Image from 'next/image';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import { GoLinkExternal } from "react-icons/go";
 
 export default function Home() {
   const { teamMembers, advisors } = teamData;
@@ -32,71 +33,35 @@ export default function Home() {
       {/*Coming Soon section*/}
       {/* Coming Soon section */}
 <section
-  id="coming-soon"
+  id="products"
   className="w-full min-h-screen flex flex-col items-center justify-center max-w-6xl mx-auto py-12 px-4"
 >
-  <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Coming Soon</h2>
-  <div className="bg-[#1c253a] p-6 rounded-lg border-4 border-[#007be5] h-auto md:h-[40vh] w-[80vw] md:w-[50vw] flex flex-col md:flex-row gap-8 items-center justify-center transition-all">
+  <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Our Products</h2>
+  <div className="bg-gray-900 p-6 rounded-lg border-4 border-[#007be5] h-auto md:h-[40vh] w-[80vw] md:w-[50vw] flex flex-col md:flex-row  items-center justify-evenly transition-all">
     <Image
-      src="https://res.cloudinary.com/dy8hx2xrj/image/upload/v1728900185/cloud-lab-high-resolution-logo-grayscale-transparent_ba6qdw.png"
+      src="https://res.cloudinary.com/dy8hx2xrj/image/upload/v1729417887/New_Project_mdpjqy.png"
       alt="AI cloud lab"
       height={1000}
       width={1000}
-      className="object-contain h-[14rem]  md:h-[10rem] md:w-[10rem]"
+      className="object-contain h-[14rem]  md:h-[18rem] md:w-[10rem]"
     />
     <div className="flex flex-col justify-center text-center md:text-left">
       <h3 className="text-2xl font-semibold mb-4">AI Cloud Lab</h3>
-      <p className="text-gray-400 mb-6">
+      <p className="text-white mb-6">
         Seamless AI development, deployment and monitoring<br />
         in Cloud all through one interface!
       </p>
+      <a href={`${process.env.NEXT_AICLOUDLAB_URL}`} target='_blank'>
+      <button className="inline-block bg-[#009ded] text-white px-4 py-2 w-[150px] rounded-full hover:bg-[#3591c0] transition-colors flex justify-center items-center " >
+        <div className='flex gap-1 font-bold'>Visit <GoLinkExternal className=' font-bold stroke-2 mt-1'/></div>
+      </button>
+        </a>
     </div>
   </div>
 </section>
 
 
-      {/* Projects Section */}
-      <section
-        id="projects"
-        className="w-full min-h-screen flex flex-col items-center justify-center max-w-6xl mx-auto py-12 px-4"
-      >
-        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">OUR PROJECTS</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
-          {/* CUDA Version Manager */}
-          <a
-            href="https://github.com/atominfra/cvm"
-            target="_blank"
-            className="w-full"
-          >
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg min-h-52 transition-transform transform  flex flex-col justify-evenly">
-              <h3 className="text-2xl font-semibold mb-4">CUDA Version Manager</h3>
-              <p className="text-gray-400 mb-6">
-                Seamless CUDA version switcher for easy GPU project configuration.
-              </p>
-              <button className="inline-block bg-[#009ded] text-white px-4 py-2 w-60 rounded-full hover:bg-[#3591c0] transition-colors">
-                View on GitHub →
-              </button>
-            </div>
-          </a>
 
-          {/* Jupyter Environment Manager */}
-          <a
-            href="https://github.com/atominfra/jupyter-environment-manager"
-            target="_blank"
-            className="w-full"
-          >
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg min-h-52 transition-transform transform flex flex-col justify-evenly ">
-              <h3 className="text-2xl font-semibold mb-4">Jupyter Environment Manager</h3>
-              <p className="text-gray-400 mb-6">
-                Docker Compose based solution that allows you to easily clone Jupyter environment.
-              </p>
-              <button className="inline-block bg-[#009ded] text-white px-4 py-2 w-60 rounded-full hover:bg-[#3591c0] transition-colors">
-                View on GitHub →
-              </button>
-            </div>
-          </a>
-        </div>
-      </section>
 
       {/* Team Section */}
       <section

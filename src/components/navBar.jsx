@@ -18,8 +18,8 @@ const NavbarSimple = (props) => {
   const navList = (
     <ul className="flex flex-col gap-4 p-6 lg:flex-row lg:items-center lg:gap-6 lg:p-0" onClick={closeDrawer}>
       <Typography as="li" color="blue-gray" className="p-1 font-light">
-        <a href="#projects" className="flex items-center text-gray-300 hover:text-white" onClick={closeDrawer}>
-          Projects
+        <a href="#products" className="flex items-center text-gray-300 hover:text-white" onClick={closeDrawer}>
+          Products
         </a>
       </Typography>
       <Typography as="li" color="blue-gray" className="p-1 font-light">
