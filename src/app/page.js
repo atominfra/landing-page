@@ -54,7 +54,7 @@ export default function Home() {
         Seamless AI development, deployment and monitoring<br />
         in Cloud all through one interface!
       </p>
-      <a href={`${process.env.NEXT_AICLOUDLAB_URL}`} target='_blank' className='flex  justify-center'>
+      <a href={`${process.env.NEXT_AICLOUDLAB_URL}`} target='_blank' className='flex md:block  justify-center'>
       <button className="inline-block bg-[#009ded]  text-white px-4 py-2 w-[150px] rounded-full hover:bg-[#3591c0] transition-colors flex justify-center items-center " >
         <div className='flex gap-1 font-bold'>Visit <GoLinkExternal className=' font-bold stroke-2 mt-1'/></div>
       </button>
