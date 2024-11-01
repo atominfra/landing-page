@@ -39,7 +39,7 @@ export default function Home() {
   <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Our Products</h2>
   <div className="bg-gray-900 p-6 rounded-lg border-4 border-[#007be5] h-auto md:h-[40vh] w-[80vw] md:w-[50vw] flex flex-col md:flex-row  items-center justify-evenly transition-all">
     <Image
-      src="https://res.cloudinary.com/dy8hx2xrj/image/upload/v1729417887/New_Project_mdpjqy.png"
+      src="https://res.cloudinary.com/dy8hx2xrj/image/upload/v1730454166/New_Project_mdpjqy.png"
       alt="AI cloud lab"
       height={1000}
       width={1000}
