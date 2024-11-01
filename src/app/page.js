@@ -1,13 +1,12 @@
-import NavbarSimple from '@/components/navBar';
-import React from 'react';
-import TeamMemberCard from '@/components/teamCards';
-import teamData from '@/utils/teamData';
 import footerBackgroundImage from '@/assets/layered-waves-footer.svg';
-import Image from 'next/image';
+import NavbarSimple from '@/components/navBar';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import TeamMemberCard from '@/components/teamCards';
+import { default as data, default as teamData } from '@/utils/teamData';
+import Image from 'next/image';
+import React from 'react';
 import { GoLinkExternal } from "react-icons/go";
-import data from "@/utils/teamData"
-
+import FeedBack from '@/components/feedback';
 export default function Home() {
   const { teamMembers, advisors } = teamData;
 
@@ -39,7 +38,7 @@ export default function Home() {
 >
   <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Our Products</h2>
   <div className="p-[4px] rounded-lg bg-gradient-to-r from-[#0EB3FF] to-[#FFFFFF] w-[90vw] md:w-[85vw]">
-  <div className="bg-gray-900 p-3 md:p-6 rounded-lg h-auto transition-all">
+  <div className="bg-gray-900 p-4 md:p-6 rounded-lg h-auto transition-all">
   
   <div className='flex flex-col md:flex-row  items-center justify-evenly '>
     <Image
@@ -70,7 +69,7 @@ export default function Home() {
       {data.aicloudlab_features.map((box, index) => (
          <div key={index} className="w-full  md:w-[40%]  border-2 rounded-[10px] p-8 font-poppins bg-gray-800 m-4 md:min-h-[200px]">
          <div className="mb-2 text-2xl font-semibold">{box.title}</div>
-         <div>{box.description}</div>
+         <div className=' text-gray-200 font-normal'>{box.description}</div>
        </div>
       ))}
     </div>
@@ -125,6 +124,10 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <div className="w-full bg-gray-900 min-h-screen max-w-7xl">
+      <FeedBack />
+    </div>
 
       {/* Footer Section */}
       <section className="w-full h-[50vh] relative overflow-hidden">
