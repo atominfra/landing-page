@@ -7,7 +7,6 @@ import Image from 'next/image';
 import React from 'react';
 import { GoLinkExternal } from "react-icons/go";
 import FeedBack from '@/components/feedback';
-
 export default function Home() {
   const { teamMembers, advisors } = teamData;
 
