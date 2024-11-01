@@ -10,7 +10,7 @@ import data from "@/utils/teamData"
 import FeedBack from '@/components/feedback';
 
 export default function Home() {
-  const { teamMembers, advisors } = teamData
+  const { teamMembers, advisors } = teamData;
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white font-sans">
@@ -29,8 +29,7 @@ export default function Home() {
           href="mailto:hello@atominfra.com"
           className="mt-12 inline-block bg-[#009ded] md:text-lg text-white px-6 py-3 rounded-full font-normal hover:bg-[#3591c0] transition-colors"
         >
-          Reach out to us at{' '}
-          <span className="font-bold">hello@atominfra.com</span>
+          Reach out to us at <span className="font-bold">hello@atominfra.com</span>
         </a>
       </section>
       {/*Coming Soon section*/}
@@ -41,7 +40,7 @@ export default function Home() {
 >
   <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Our Products</h2>
   <div className="p-[4px] rounded-lg bg-gradient-to-r from-[#0EB3FF] to-[#FFFFFF] w-[90vw] md:w-[85vw]">
-  <div className="bg-gray-900 p-3 md:p-6 rounded-lg h-auto transition-all">
+  <div className="bg-gray-900 p-4 md:p-6 rounded-lg h-auto transition-all">
   
   <div className='flex flex-col md:flex-row  items-center justify-evenly '>
     <Image
@@ -72,7 +71,7 @@ export default function Home() {
       {data.aicloudlab_features.map((box, index) => (
          <div key={index} className="w-full  md:w-[40%]  border-2 rounded-[10px] p-8 font-poppins bg-gray-800 m-4 md:min-h-[200px]">
          <div className="mb-2 text-2xl font-semibold">{box.title}</div>
-         <div>{box.description}</div>
+         <div className=' text-gray-200 font-normal'>{box.description}</div>
        </div>
       ))}
     </div>
@@ -93,9 +92,7 @@ export default function Home() {
         id="team"
         className="w-full min-h-screen flex flex-col items-center justify-center max-w-7xl mx-auto py-12 px-4"
       >
-        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">
-          Meet Our Team
-        </h2>
+        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Meet Our Team</h2>
         <div className="flex flex-wrap justify-center gap-10">
           {teamMembers.map((member) => (
             <TeamMemberCard
@@ -115,9 +112,7 @@ export default function Home() {
         id="advisors"
         className="w-full min-h-screen flex flex-col items-center justify-center max-w-7xl mx-auto py-12 px-4"
       >
-        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">
-          Meet Our Advisors
-        </h2>
+        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Meet Our Advisors</h2>
         <div className="flex flex-wrap justify-center gap-10">
           {advisors.map((member) => (
             <TeamMemberCard
@@ -151,5 +146,5 @@ export default function Home() {
 
       <ScrollToTopButton />
     </div>
-  )
+  );
 }
