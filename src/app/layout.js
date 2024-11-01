@@ -16,12 +16,16 @@ const geistMono = localFont({
 export const metadata = {
   title: "AtomInfra",
   description: "Making AI Accessible",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
        <head>
+       <link rel="icon" href="/favicon.ico" />
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-BNZY66YLX0"

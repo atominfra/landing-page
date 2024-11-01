@@ -1,10 +1,10 @@
-import NavbarSimple from '@/components/navBar';
-import React from 'react';
-import TeamMemberCard from '@/components/teamCards';
-import teamData from '@/utils/teamData';
 import footerBackgroundImage from '@/assets/layered-waves-footer.svg';
-import Image from 'next/image';
+import NavbarSimple from '@/components/navBar';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import TeamMemberCard from '@/components/teamCards';
+import { default as data, default as teamData } from '@/utils/teamData';
+import Image from 'next/image';
+import React from 'react';
 import { GoLinkExternal } from "react-icons/go";
 import data from "@/utils/teamData"
 import FeedBack from '@/components/feedback';
