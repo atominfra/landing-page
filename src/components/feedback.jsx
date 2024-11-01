@@ -56,13 +56,7 @@ const FeedBack = () => {
 
   return (
     <div className=" w-full flex flex-col md:flex-row items-center justify-evenly p-8 bg-gray-900 min-h-screen max-w-7xl">
-      <div className="hidden md:block md:w-1/3 text-center">
-        <div className="">
-          {/* Icon */}
           <Image alt="messageIcon" src={messageIcon} width={174} height={169} />
-        </div>
-      </div>
-
       <form
         onSubmit={handleSubmit}
         className="md:w-2/3 w-full max-w-lg bg-gray-900 p-8 rounded-lg shadow-lg"

@@ -6,7 +6,6 @@ import { default as data, default as teamData } from '@/utils/teamData';
 import Image from 'next/image';
 import React from 'react';
 import { GoLinkExternal } from "react-icons/go";
-import data from "@/utils/teamData"
 import FeedBack from '@/components/feedback';
 
 export default function Home() {
