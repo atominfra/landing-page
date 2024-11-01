@@ -6,13 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky"
   },
   "dependencies": {
     "@material-tailwind/react": "^2.1.10",
+    "husky": "^9.1.6",
     "install": "^0.13.0",
     "next": "14.2.15",
     "nodemailer": "^6.9.16",
+    "prettier": "^3.3.3",
     "react": "^18",
     "react-dom": "^18",
     "react-hot-toast": "^2.4.1",
