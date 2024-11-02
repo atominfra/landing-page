@@ -16,49 +16,49 @@ const FeedBack = () => {
     setFormData((prevData) => ({ ...prevData, [name]: value }))
   }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    if (
-      formData.name === '' ||
-      formData.message === '' ||
-      formData.email === ''
-    ) {
-      toast.error('Please fill the form')
-      return
-    }
-    try {
-      setIsLoading(true)
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      })
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault()
+  //   if (
+  //     formData.name === '' ||
+  //     formData.message === '' ||
+  //     formData.email === ''
+  //   ) {
+  //     toast.error('Please fill the form')
+  //     return
+  //   }
+  //   try {
+  //     setIsLoading(true)
+  //     const response = await fetch('/api/sendEmail', {
+  //       method: 'POST',
+  //       headers: { 'Content-Type': 'application/json' },
+  //       body: JSON.stringify(formData),
+  //     })
 
-      if (response.ok) {
-        toast.success('Message sent successfully!')
+  //     if (response.ok) {
+  //       toast.success('Message sent successfully!')
 
-        setFormData({
-          name: '',
-          email: '',
-          subject: '',
-          message: '',
-        })
-      } else {
-        toast.error('Failed to send message. Please try again')
-      }
-      setIsLoading(false)
-    } catch (error) {
-      console.error('Error sending message:', error)
-      toast.error('An error occurred. Please try again later.')
-      setIsLoading(false)
-    }
-  }
+  //       setFormData({
+  //         name: '',
+  //         email: '',
+  //         subject: '',
+  //         message: '',
+  //       })
+  //     } else {
+  //       toast.error('Failed to send message. Please try again')
+  //     }
+  //     setIsLoading(false)
+  //   } catch (error) {
+  //     console.error('Error sending message:', error)
+  //     toast.error('An error occurred. Please try again later.')
+  //     setIsLoading(false)
+  //   }
+  // }
 
   return (
     <div className=" w-full flex flex-col md:flex-row items-center justify-evenly p-8 bg-gray-900 min-h-screen max-w-7xl">
           <Image alt="messageIcon" src={messageIcon} width={174} height={169} />
       <form
-        onSubmit={handleSubmit}
+        // onSubmit={handleSubmit}
         className="md:w-2/3 w-full max-w-lg bg-gray-900 p-8 rounded-lg shadow-lg"
       >
         <h2 className="text-2xl font-semibold text-white mb-6 text-start">
@@ -102,8 +102,10 @@ const FeedBack = () => {
         ></textarea>
 
         <button
+          title='disabled'
           type="submit"
-          className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-[10px] transition duration-300"
+          disabled={true}
+          className="w-full bg-gray-600 hover:cursor-not-allowed text-white font-semibold py-3 rounded-[10px] transition duration-300"
         >
           {isLoading === true ? (
             <div className="flex justify-center">
