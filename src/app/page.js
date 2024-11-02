@@ -1,12 +1,12 @@
-import NavbarSimple from '@/components/navBar';
-import React from 'react';
-import TeamMemberCard from '@/components/teamCards';
-import teamData from '@/utils/teamData';
 import footerBackgroundImage from '@/assets/layered-waves-footer.svg';
-import Image from 'next/image';
+import NavbarSimple from '@/components/navBar';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import TeamMemberCard from '@/components/teamCards';
+import { default as data, default as teamData } from '@/utils/teamData';
+import Image from 'next/image';
+import React from 'react';
 import { GoLinkExternal } from "react-icons/go";
-
+import FeedBack from '@/components/feedback';
 export default function Home() {
   const { teamMembers, advisors } = teamData;
 
@@ -37,15 +37,18 @@ export default function Home() {
   className="w-full min-h-screen flex flex-col items-center justify-center max-w-6xl mx-auto py-12 px-4"
 >
   <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Our Products</h2>
-  <div className="bg-gray-900 p-6 rounded-lg border-4 border-[#007be5] h-auto md:h-[40vh] w-[80vw] md:w-[50vw] flex flex-col md:flex-row  items-center justify-evenly transition-all">
+  <div className="p-[4px] rounded-lg bg-gradient-to-r from-[#0EB3FF] to-[#FFFFFF] w-[90vw] md:w-[85vw]">
+  <div className="bg-gray-900 p-4 md:p-6 rounded-lg h-auto transition-all">
+  
+  <div className='flex flex-col md:flex-row  items-center justify-evenly '>
     <Image
-      src="https://res.cloudinary.com/dy8hx2xrj/image/upload/v1730454166/New_Project_mdpjqy.png"
+      src="https://res.cloudinary.com/dy8hx2xrj/image/upload/v1730454166/Frame_1_e7wgpb.png"
       alt="AI cloud lab"
-      height={1000}
-      width={1000}
-      className="object-contain h-[14rem]  md:h-[18rem] md:w-[10rem]"
+      height={300}
+      width={400}
+      className="object-contain h-[14rem]  md:h-[18rem] md:w-[25rem]"
     />
-    <div className="flex flex-col justify-center text-center md:text-left">
+    <div className="flex flex-col justify-center text-center md:text-left md:w-[35vw]">
       <h3 className="text-2xl font-semibold mb-4">AI Cloud Lab</h3>
       <p className="text-white mb-6">
         Seamless AI development, deployment and monitoring<br />
@@ -56,6 +59,25 @@ export default function Home() {
         <div className='flex gap-1 font-bold'>Visit <GoLinkExternal className=' font-bold stroke-2 mt-1'/></div>
       </button>
         </a>
+      </div>
+        </div>
+    <div className='text-center w-full font-poppins text-3xl font-semibold my-20'>We make AI deployment <span className="italic bg-gradient-to-r from-[#1AB7FF] to-[#0051FF] bg-clip-text text-transparent">
+  super-fast 
+</span> {" "}
+ and affordable!</div>
+ <div className="flex flex-wrap justify-center">
+      {data.aicloudlab_features.map((box, index) => (
+         <div key={index} className="w-full  md:w-[40%]  border-2 rounded-[10px] p-8 font-poppins bg-gray-800 m-4 md:min-h-[200px]">
+         <div className="mb-2 text-2xl font-semibold">{box.title}</div>
+         <div className=' text-gray-200 font-normal'>{box.description}</div>
+       </div>
+      ))}
+    </div>
+    </div>
+  <div>
+  
+ 
+
     </div>
   </div>
 </section>
@@ -102,6 +124,10 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <div className="w-full bg-gray-900 min-h-screen max-w-7xl">
+      <FeedBack />
+    </div>
 
       {/* Footer Section */}
       <section className="w-full h-[50vh] relative overflow-hidden">
