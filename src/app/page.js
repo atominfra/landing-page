@@ -1,4 +1,5 @@
 import footerBackgroundImage from '@/assets/layered-waves-footer.svg';
+import FeedBack from '@/components/feedback';
 import NavbarSimple from '@/components/navBar';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import TeamMemberCard from '@/components/teamCards';
@@ -6,7 +7,6 @@ import { default as data, default as teamData } from '@/utils/teamData';
 import Image from 'next/image';
 import React from 'react';
 import { GoLinkExternal } from "react-icons/go";
-import FeedBack from '@/components/feedback';
 export default function Home() {
   const { teamMembers, advisors } = teamData;
 
@@ -42,7 +42,7 @@ export default function Home() {
   
   <div className='flex flex-col md:flex-row  items-center justify-evenly '>
     <Image
-      src="https://res.cloudinary.com/dy8hx2xrj/image/upload/v1730454166/Frame_1_e7wgpb.png"
+    src="https://res.cloudinary.com/dy8hx2xrj/image/upload/v1730454166/New_Project_mdpjqy.png"
       alt="AI cloud lab"
       height={300}
       width={400}
@@ -125,9 +125,9 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="w-full bg-gray-900 min-h-screen max-w-7xl">
+      {/* <div className="w-full bg-gray-900 min-h-screen max-w-7xl">
       <FeedBack />
-    </div>
+    </div> */}
 
       {/* Footer Section */}
       <section className="w-full h-[50vh] relative overflow-hidden">
