@@ -20,7 +20,7 @@ export default function Home() {
       <section className="w-full text-center h-screen flex flex-col items-center justify-center pt-24 md:pt-44 py-12 px-4">
         <div className="w-[90vw] md:w-[50vw]">
           <p className="text-4xl md:text-6xl text-gray-500 font-semibold text-balance font-baloo">
-            Making <b>AI</b> Accessible
+          Making <b>AI</b> deployment super-fast and affordable!
           </p>
         </div>
         <a
