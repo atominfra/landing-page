@@ -1,9 +1,9 @@
 "use client";
+import { Button, Drawer, IconButton, Navbar, Typography } from "@material-tailwind/react";
 import { useEffect, useState } from "react";
-import { Button, Navbar, Typography, IconButton, Drawer } from "@material-tailwind/react";
-import SocialPill from "./SocialPill";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
+import SocialPill from "./SocialPill";
 
 const NavbarSimple = (props) => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -16,7 +16,7 @@ const NavbarSimple = (props) => {
   }, []);
 
   const navList = (
-    <ul className="flex flex-col gap-4 p-6 lg:flex-row lg:items-center lg:gap-6 lg:p-0" onClick={closeDrawer}>
+    <ul className="flex flex-col gap-4 p-6 lg:flex-row lg:items-center lg:gap-6 lg:p-0 " onClick={closeDrawer}>
       <Typography as="li" color="blue-gray" className="p-1 font-light">
         <a href="#products" className="flex items-center text-gray-300 hover:text-white" onClick={closeDrawer}>
           Products
@@ -36,10 +36,10 @@ const NavbarSimple = (props) => {
   );
 
   return (
-    <>
+    <div className="shadow-lg m-0">
       <Navbar
         color="transparent"
-        className="my-3 max-w-[100vw] lg:max-w-[89vw] bg-gray-900 mx-auto py-3 flex items-center justify-between  "
+        className=" max-w-[100vw] lg:max-w-[89vw] bg-gray-900 mx-auto py-3 flex items-center justify-between  "
       >
         <Typography className="m-4 text-white-900 text-xl md:text-3xl font-bold font-baloo">
           <a href="#" className="flex items-center text-gray-300 hover:text-white" >
@@ -92,7 +92,7 @@ const NavbarSimple = (props) => {
             <div className='absolute right-0 mr-4 w-2 h-[100px] rounded-full bg-gray-900' />
         </div>
       </Drawer>
-    </>
+    </div>
   );
 };
 

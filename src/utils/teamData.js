@@ -56,7 +56,7 @@ const teamData = {
     },
     {
       "title": "Unified",
-      "description": "We auto distribute load among CPU and GPU and serve it to you in a single API."
+      "description": "All in one tool for Building, Training, Packaging, Deploying, Monitoring and Auto scaling AI."
     },
     {
       "title": "Portable",
