@@ -121,9 +121,9 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="w-full bg-gray-900 min-h-screen max-w-7xl">
+      {/* <div className="w-full bg-gray-900 min-h-screen max-w-7xl">
       <FeedBack />
-    </div>
+    </div> */}
 
       {/* Footer Section */}
       <section className="w-full h-[50vh] relative overflow-hidden">
