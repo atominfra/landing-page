@@ -37,7 +37,7 @@ export default function Home() {
   className="w-full min-h-screen flex flex-col items-center justify-center max-w-6xl mx-auto py-12 px-4"
 >
   <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Our Products</h2>
-  <div className="p-[6px] rounded-[10px] bg-inherit lg:bg-gradient-to-r from-[#0EB3FF] to-[#FFFFFF] w-[90vw] lg:w-[75vw]">
+  <div className="p-[6px] rounded-[10px] bg-inherit  w-[90vw] lg:w-[75vw]">
   <div className="bg-gray-900 p-4 lg:p-6 rounded-[10px] h-auto transition-all">
   
   <div className='flex flex-col lg:flex-row  items-center justify-evenly '>
