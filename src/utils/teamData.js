@@ -45,6 +45,24 @@ const teamData = {
       linkedinUrl: 'https://www.linkedin.com/in/ajay-tyouharia/',
     },
   ],
+  aicloudlab_features: [
+    {
+      "title": "Built for AI Engineers",
+      "description": "Allows to auto package and deploy a jupyter notebook abstracting out all the boring tough stuff."
+    },
+    {
+      "title": "Built for Efficiency",
+      "description": "We auto distribute load among CPU and GPU and serve it to you in a single API."
+    },
+    {
+      "title": "Unified",
+      "description": "All in one tool for Building, Training, Packaging, Deploying, Monitoring and Auto scaling AI."
+    },
+    {
+      "title": "Portable",
+      "description": "Seamless migration from one provider to another, enabling you to choose the most cost-effective provider."
+    }
+  ]  
 };
 
 export default teamData;
