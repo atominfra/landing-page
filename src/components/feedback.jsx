@@ -102,8 +102,10 @@ const FeedBack = () => {
         ></textarea>
 
         <button
+          title='disabled'
           type="submit"
-          className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-[10px] transition duration-300"
+          disabled={true}
+          className="w-full bg-gray-600 hover:cursor-not-allowed text-white font-semibold py-3 rounded-[10px] transition duration-300"
         >
           {isLoading === true ? (
             <div className="flex justify-center">

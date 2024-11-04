@@ -1,4 +1,5 @@
 import footerBackgroundImage from '@/assets/layered-waves-footer.svg';
+import FeedBack from '@/components/feedback';
 import NavbarSimple from '@/components/navBar';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import TeamMemberCard from '@/components/teamCards';
