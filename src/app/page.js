@@ -136,7 +136,7 @@ export default function Home() {
           <h1 className='absolute top-[6vh] text-lg left-[70vw]'>
             Reach out to us at <a href='mailto:hello@atominfra.com'><b>hello@atominfra.com</b></a>
           </h1>
-          <div className=' relative top-[1.28vh] w-[6.2vw] left-[86vw]'>
+          <div className='absolute top-[12vh] min-w-[88px] max-w-[6.2vw] right-[7vw]'>
           <SocialPill/>
           </div>
         </div>
