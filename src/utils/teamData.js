@@ -14,7 +14,7 @@ const teamData = {
     },
     {
       name: 'Shryansh',
-      role: 'Founding Member, Full Stack',
+      role: 'Founding Member, Frontend',
       photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1728836215/shryansh_qfjiae.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/shryansh-chaudhary/',
     },
@@ -25,8 +25,8 @@ const teamData = {
       linkedinUrl: 'https://www.linkedin.com/in/prabhmeet-singh-11446699w/',
     },
     {
-      name: 'Swastik Singh',
-      role: 'Founding Member, Python Developer',
+      name: 'Swastik Bhowmick',
+      role: 'Founding Member, Backend',
       photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1730966072/swastik_1_cropped_odlm5m.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/swastik-bhowmick-24169b224/#/',
     },
