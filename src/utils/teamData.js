@@ -24,6 +24,12 @@ const teamData = {
       photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1728843295/WhatsApp_Image_2024-10-13_at_23.41.59_ndo34n.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/prabhmeet-singh-11446699w/',
     },
+    {
+      name: 'Swastik Singh',
+      role: 'Founding Member, Python Developer',
+      photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1730966072/swastik_1_cropped_odlm5m.jpg',
+      linkedinUrl: 'https://www.linkedin.com/in/swastik-bhowmick-24169b224/#/',
+    },
   ],
   advisors: [
     {

@@ -87,7 +87,7 @@ export default function Home() {
         className="w-full min-h-screen flex flex-col items-center justify-center max-w-7xl mx-auto py-12 px-4"
       >
         <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Meet Our Team</h2>
-        <div className="flex flex-wrap justify-center gap-10">
+        <div className="flex flex-wrap justify-center gap-10 max-w-[60rem]">
           {teamMembers.map((member) => (
             <TeamMemberCard
               key={member.name}
