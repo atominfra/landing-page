@@ -129,15 +129,15 @@ export default function Home() {
       {/* Footer Section */}
       <section className="w-full h-[25vh] relative overflow-hidden flex">
         <div className="absolute inset-0 border-t-2 border-gray-600">
-          <h1 className='md:text-lg text-[15px] top-[6vh] left-[4.7vw] relative md:top-[6vh] md:left-[6vw]'><b>Ambition Forge</b> Pvt. Ltd</h1>
-          <h2 className='relative top-[7vh] left-[4.7vw] md:left-[6vw] md:text-[1rem] text-[12px]'> Indiranagar, Bangalore<br/>
+          <h1 className='md:text-lg text-[15px] top-[5vh] left-[4.7vw] relative md:top-[6vh] md:left-[6vw]'><b>Ambition Forge Pvt. Ltd</b></h1>
+          <h2 className='relative top-[5.2vh] left-[4.7vw] md:left-[6vw] md:text-[1rem] text-[12px]'> Indiranagar, Bangalore<br/>
           560038
           </h2>
-          <h1 className='hidden md:block absolute text-[15px] md:top-[6vh] md:text-lg md:right-[7.2vw] right-[4.7vw] top-[6vh]'>
-            <span className="block md:inline text-right">Reach out to us at: </span>
-            <span className="block md:inline"><a href='mailto:hello@atominfra.com'><b>hello@atominfra.com</b></a></span>
+          <h1 className='absolute text-[15px] md:top-[6vh] md:text-lg md:right-[7.2vw] right-[56vw] top-[15vh]'>
+            <span className="block md:inline text-left">Reach out to us: </span>
+            <span className="block md:inline underline"><a href='mailto:hello@atominfra.com'><b>hello@atominfra.com</b></a></span>
           </h1>
-          <div className=' absolute md:top-[12vh] w-[92px] right-[7vw] top-[6.2vh]'>
+          <div className=' absolute md:top-[12vh] w-[92px] right-[7vw] top-[5.2vh]'>
           <SocialPill/>
           </div>
         </div>
