@@ -2,6 +2,7 @@ import footerBackgroundImage from '@/assets/layered-waves-footer.svg';
 import FeedBack from '@/components/feedback';
 import NavbarSimple from '@/components/navBar';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import SocialPill from '@/components/SocialPill';
 import TeamMemberCard from '@/components/teamCards';
 import { default as data, default as teamData } from '@/utils/teamData';
 import Image from 'next/image';
@@ -126,15 +127,18 @@ export default function Home() {
     </div> */}
 
       {/* Footer Section */}
-      <section className="w-full h-[50vh] relative overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src={footerBackgroundImage}
-            alt="Section divider image"
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-          />
+      <section className="w-full h-[25vh] relative overflow-hidden flex">
+        <div className="absolute inset-0 border-t-2 border-gray-600">
+          <h1 className='text-lg relative top-[6vh] left-[6vw]'><b>Ambition Forge</b> Pvt. Ltd</h1>
+          <h2 className='relative top-[7vh] left-[6vw]'> Indiranagar, Bangalore<br/>
+          560038
+          </h2>
+          <h1 className='absolute top-[6vh] text-lg left-[70vw]'>
+            Reach out to us at <a href='mailto:hello@atominfra.com'><b>hello@atominfra.com</b></a>
+          </h1>
+          <div className=' relative top-[1.28vh] w-[6.2vw] left-[86vw]'>
+          <SocialPill/>
+          </div>
         </div>
       </section>
 
