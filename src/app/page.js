@@ -133,7 +133,7 @@ export default function Home() {
           <h2 className='relative top-[5.2vh] left-[4.7vw] md:left-[6vw] md:top-[7.2vh] md:text-[1rem] text-[12px]'> Indiranagar, Bangalore<br/>
           560038
           </h2>
-          <h1 className='absolute text-[15px] md:top-[6vh] md:text-lg md:right-[7.2vw] md:left-auto left-[4.7vw] top-[15vh]'>
+          <h1 className='absolute text-[12px] md:top-[6vh] md:text-lg md:right-[7.2vw] md:left-auto left-[4.7vw] top-[15vh]'>
             <span className="block md:inline text-left">Reach out to us: </span>
             <span className="block md:inline "><a href='mailto:hello@atominfra.com'>hello@atominfra.com</a></span>
           </h1>
