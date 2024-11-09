@@ -18,18 +18,12 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="w-full text-center h-screen flex flex-col items-center justify-center pt-24 md:pt-44 py-12 px-4">
+      <section className="w-full text-center h-screen flex flex-col items-center justify-center pt-10 md:pt-38 py-12 px-4">
         <div className="w-[90vw] md:w-[50vw]">
           <p className="text-4xl md:text-6xl text-gray-500 font-semibold text-balance font-baloo">
           Making <b>AI</b> deployment super-fast and affordable!
           </p>
         </div>
-        <a
-          href="mailto:hello@atominfra.com"
-          className="mt-12 inline-block bg-[#009ded] md:text-lg text-white px-6 py-3 rounded-full font-normal hover:bg-[#3591c0] transition-colors"
-        >
-          Reach out to us at <span className="font-bold">hello@atominfra.com</span>
-        </a>
       </section>
       {/*Coming Soon section*/}
       {/* Coming Soon section */}
@@ -37,7 +31,7 @@ export default function Home() {
   id="products"
   className="w-full min-h-screen flex flex-col items-center justify-center max-w-6xl mx-auto py-12 px-4"
 >
-  <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Our Products</h2>
+  <h2 className="text-4xl font-bold text-center mb-8 text-gray-500 mt-28 lg:mt-0">Our Products</h2>
   <div className="p-[6px] rounded-[10px] bg-inherit  w-[90vw] lg:w-[75vw]">
   <div className="bg-gray-900 p-4 lg:p-6 rounded-[10px] h-auto transition-all">
   
@@ -134,7 +128,6 @@ export default function Home() {
           560038
           </h2>
           <h1 className='absolute text-[12px] md:top-[6vh] md:text-lg md:right-[7.2vw] md:left-auto left-[4.7vw] top-[15vh]'>
-            <span className="block md:inline text-left">Reach out to us: </span>
             <span className="block md:inline "><a href='mailto:hello@atominfra.com'>hello@atominfra.com</a></span>
           </h1>
           <div className=' absolute md:top-[12vh] w-[92px] right-[7vw] top-[5.2vh]'>
@@ -142,8 +135,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <ScrollToTopButton />
     </div>
   );
 }
