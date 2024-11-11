@@ -22,7 +22,7 @@ export default function Home() {
           backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, rgba(17, 24, 39, 1)),url('https://res.cloudinary.com/dy8hx2xrj/image/upload/v1731301690/blue-wave-surface-blockchain-technology-and-science-abstract-background-music-equalizer-of-hexagon-network-wire-frame-illumination-texture-pattern-new-technology-particle-digital-concept-wallpaper-vector_1_uhhiel.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          opacity: 0.62 // Adjust opacity as needed (0.5 = 50%)
+          opacity: 0.46 // Adjust opacity as needed (0.5 = 50%)
           }}></div>
         <div className="w-[90vw] md:w-[50vw] h-50 relative">
           <p className="text-4xl md:text-6xl text-white font-regular text-balance font-baloo md:pb-24 z-10">
