@@ -10,28 +10,32 @@ import React from 'react';
 import { GoLinkExternal } from "react-icons/go";
 export default function Home() {
   const { teamMembers, advisors } = teamData;
-
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white font-sans">
       <header className="w-full z-10 fixed top-0 bg-gray-900">
         <NavbarSimple whiteNavbar={true} />
       </header>
-
       {/* Hero Section */}
-      <section className="w-full text-center h-screen flex flex-col items-center justify-center pt-10 md:pt-38 py-12 px-4">
-        <div className="w-[90vw] md:w-[50vw]">
-          <p className="text-4xl md:text-6xl text-gray-500 font-semibold text-balance font-baloo">
-          Making <b>AI</b> deployment super-fast and affordable!
+      <section className="w-full text-center h-screen flex flex-col items-center justify-center pt-10 md:pt-38 py-12 px-4 relative">
+        <div className="absolute inset-0"
+        style={{
+          backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, rgba(17, 24, 39, 1)),url('https://res.cloudinary.com/dy8hx2xrj/image/upload/v1731301690/blue-wave-surface-blockchain-technology-and-science-abstract-background-music-equalizer-of-hexagon-network-wire-frame-illumination-texture-pattern-new-technology-particle-digital-concept-wallpaper-vector_1_uhhiel.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: 0.62 // Adjust opacity as needed (0.5 = 50%)
+          }}></div>
+        <div className="w-[90vw] md:w-[50vw] h-50 relative">
+          <p className="text-4xl md:text-6xl text-white font-regular text-balance font-baloo md:pb-24 z-10">
+          Making <span className="font-bold bg-clip-text text-transparent"style={{backgroundImage: "linear-gradient(to right, #3591C0, #89d4fa)"}}>AI</span> deployment super-fast and affordable!
           </p>
         </div>
       </section>
-      {/*Coming Soon section*/}
       {/* Coming Soon section */}
 <section
   id="products"
-  className="w-full min-h-screen flex flex-col items-center justify-center max-w-6xl mx-auto py-12 px-4"
+  className="w-full min-h-screen flex flex-col items-center justify-center max-w-6xl mx-auto pt-32 pb-16 px-4"
 >
-  <h2 className="text-4xl font-bold text-center mb-8 text-gray-500 mt-28 lg:mt-0">Our Products</h2>
+  <h2 className="text-4xl font-bold text-center text-gray-500 mt-28 lg:mt-0">Our Products</h2>
   <div className="p-[6px] rounded-[10px] bg-inherit  w-[90vw] lg:w-[75vw]">
   <div className="bg-gray-900 p-4 lg:p-6 rounded-[10px] h-auto transition-all">
   
