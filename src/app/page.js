@@ -22,10 +22,10 @@ export default function Home() {
           backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, rgba(17, 24, 39, 1)),url('https://res.cloudinary.com/dy8hx2xrj/image/upload/v1731301690/blue-wave-surface-blockchain-technology-and-science-abstract-background-music-equalizer-of-hexagon-network-wire-frame-illumination-texture-pattern-new-technology-particle-digital-concept-wallpaper-vector_1_uhhiel.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          opacity: 0.46 // Adjust opacity as needed (0.5 = 50%)
+          opacity: 0.20 // Adjust opacity as needed (0.5 = 50%)
           }}></div>
-        <div className="w-[90vw] md:w-[50vw] h-50 relative">
-          <p className="text-4xl md:text-6xl text-white font-regular text-balance font-baloo md:pb-24 z-10">
+        <div className="w-[90w] md:w-[60vw] h-50 relative">
+          <p className="text-[32px] md:text-6xl text-white font-regular text-balance font-baloo z-10">
           Making <span className="font-bold bg-clip-text text-transparent"style={{backgroundImage: "linear-gradient(to right, #3591C0, #89d4fa)"}}>AI</span> deployment super-fast and affordable!
           </p>
         </div>
@@ -123,20 +123,19 @@ export default function Home() {
       {/* <div className="w-full bg-gray-900 min-h-screen max-w-7xl">
       <FeedBack />
     </div> */}
-
       {/* Footer Section */}
-      <section className="w-full h-[25vh] relative overflow-hidden flex">
-        <div className="absolute inset-0 border-t-2 border-gray-600">
-          <h1 className='md:text-lg text-[15px] top-[5vh] left-[4.7vw] relative md:top-[6vh] md:left-[6vw]'><b>Ambition Forge Pvt. Ltd</b></h1>
-          <h2 className='relative top-[5.2vh] left-[4.7vw] md:left-[6vw] md:top-[7.2vh] md:text-[1rem] text-[12px]'> Indiranagar, Bangalore<br/>
+      <section className="flex justify-between items-center h-[25vh] w-full border-t-[6px] border-[#29303E] min-h-[180px] md:px-[8vw] px-[2vw] text-base md:text-lg">
+        <div className="p-2">
+          <h1>Ambition Forge Pvt. Ltd</h1>
+          <h1> Indiranagar, Bangalore<br/>
           560038
-          </h2>
-          <h1 className='absolute text-[12px] md:top-[6vh] md:text-lg md:right-[7.2vw] md:left-auto left-[4.7vw] top-[15vh]'>
-            <span className="block md:inline "><a href='mailto:hello@atominfra.com'>hello@atominfra.com</a></span>
           </h1>
-          <div className=' absolute md:top-[12vh] w-[92px] right-[7vw] top-[5.2vh]'>
-          <SocialPill/>
-          </div>
+        </div>
+        <div className='space-y-[10.2px] md:space-y-[12.2px] flex-wrap justify-items-end p-2'>
+          <h1 className='no-underline'>
+            <a href='mailto:hello@atominfra.com'>hello@atominfra.com</a>
+          </h1>
+          <div className='max-w-[100px]'><SocialPill/></div>
         </div>
       </section>
     </div>
