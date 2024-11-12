@@ -19,10 +19,10 @@ export default function Home() {
       <section className="w-full text-center h-screen flex flex-col items-center justify-center pt-10 md:pt-38 py-12 px-4 relative">
         <div className="absolute inset-0"
         style={{
-          backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, rgba(17, 24, 39, 1)),url('https://res.cloudinary.com/dy8hx2xrj/image/upload/v1731301690/blue-wave-surface-blockchain-technology-and-science-abstract-background-music-equalizer-of-hexagon-network-wire-frame-illumination-texture-pattern-new-technology-particle-digital-concept-wallpaper-vector_1_uhhiel.png')",
+          backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0) 82%, rgba(17, 24, 39, 1)),url('https://res.cloudinary.com/dy8hx2xrj/image/upload/v1731301690/blue-wave-surface-blockchain-technology-and-science-abstract-background-music-equalizer-of-hexagon-network-wire-frame-illumination-texture-pattern-new-technology-particle-digital-concept-wallpaper-vector_1_uhhiel.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          opacity: 0.20 // Adjust opacity as needed (0.5 = 50%)
+          opacity: 0.10 // Adjust opacity as needed (0.5 = 50%)
           }}></div>
         <div className="w-[90w] md:w-[60vw] h-50 relative">
           <p className="text-[32px] md:text-6xl text-white font-regular text-balance font-baloo z-10">
