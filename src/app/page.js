@@ -129,7 +129,7 @@ export default function Home() {
       {/* Footer Section */}
       <Footer/>
 
-      <ScrollToTopButton />
+      {/* <ScrollToTopButton /> */}
     </div>
   );
 }
