@@ -27,20 +27,20 @@ export default function Footer(){
         </div>
         <div className='md:flex gap-20 hidden '>
           <div>
-            <span className='text-gray-300 text-xl font-medium'>Resources</span>
+            <span className='text-gray-300 text-2xl font-medium'>Resources</span>
               <div>
                 <ul className="flex flex-col  py-3 " >
-                  <span   className="p-1 font-light">
+                  <span   className="p-1 font-normal">
                     <a href="#products" className="flex items-center text-gray-400 hover:text-white" >
                       Products
                     </a>
                   </span>
-                  <span   className="p-1 font-light">
+                  <span   className="p-1 font-normal">
                     <a href="#team" className="flex items-center text-gray-400 hover:text-white" >
                       Team
                     </a>
                   </span>
-                  <span   className="p-1 font-light" >
+                  <span   className="p-1 font-normal" >
                     <a href="#advisors" className="flex items-center text-gray-400 hover:text-white">
                       Advisors
                     </a>
@@ -49,10 +49,10 @@ export default function Footer(){
               </div>
           </div>
           <div>
-            <span className='text-gray-300 text-xl font-medium'>Quick Links</span>
+            <span className='text-gray-300 text-2xl font-medium'>Quick Links</span>
               <div>
                 <ul className="flex flex-col  py-3 " >
-                  <span   className="p-1 font-light">
+                  <span   className="p-1 font-normal">
                     <a href="#products" className="flex items-center text-gray-400 hover:text-white" >
                       AI Cloudlab
                     </a>
