@@ -11,24 +11,25 @@ export default function Home() {
   const { teamMembers, advisors } = teamData;
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white font-sans">
-      <header className="w-full z-10 fixed top-0 bg-gray-900">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#FFFFFF] text-black font-sans">
+      <header className="w-full z-10 fixed top-0 bg-[#FFFFFF]">
         <NavbarSimple whiteNavbar={true} />
       </header>
 
       {/* Hero Section */}
-      <section className="w-full text-center h-screen flex flex-col items-center justify-center pt-24 md:pt-44 py-12 px-4">
-        <div className="w-[90vw] md:w-[50vw]">
-          <p className="text-4xl md:text-6xl text-gray-500 font-semibold text-balance font-baloo">
-          Making <b>AI</b> deployment super-fast and affordable!
+      <section className="w-full text-center h-screen flex flex-col items-center justify-center pt-10 md:pt-38 py-12 px-4 relative">
+        {/* <div className="absolute inset-0"
+        style={{
+          backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0) 82%, rgba(17, 24, 39, 1)),url('https://res.cloudinary.com/dy8hx2xrj/image/upload/v1731301690/blue-wave-surface-blockchain-technology-and-science-abstract-background-music-equalizer-of-hexagon-network-wire-frame-illumination-texture-pattern-new-technology-particle-digital-concept-wallpaper-vector_1_uhhiel.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: 0.10 // Adjust opacity as needed (0.5 = 50%)
+          }}></div> */}
+        <div className="w-[90w] md:w-[60vw] h-50 relative font-light">
+          <p className="text-[32px] md:text-6xl text-black font-regular text-balance font-baloo z-10">
+          Making <span className="font-poppins font-medium bg-clip-text text-transparent"style={{backgroundImage: "linear-gradient(to right, #3591C0, #89d4fa)"}}>AI</span> deployment super-fast and affordable!
           </p>
         </div>
-        <a
-          href="mailto:hello@atominfra.com"
-          className="mt-12 inline-block bg-[#009ded] md:text-lg text-white px-6 py-3 rounded-full font-normal hover:bg-[#3591c0] transition-colors"
-        >
-          Reach out to us at <span className="font-bold">hello@atominfra.com</span>
-        </a>
       </section>
       {/*Coming Soon section*/}
       {/* Coming Soon section */}
@@ -36,9 +37,9 @@ export default function Home() {
   id="products"
   className="w-full min-h-screen flex flex-col items-center justify-center max-w-6xl mx-auto py-12 px-4"
 >
-  <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Our Products</h2>
+  <h2 className="text-4xl font-bold text-center mb-20 text-black mt-28 lg:mt-0">Our Products</h2>
   <div className="p-[6px] rounded-[10px] bg-inherit  w-[90vw] lg:w-[75vw]">
-  <div className="bg-gray-900 p-4 lg:p-6 rounded-[10px] h-auto transition-all">
+  <div className="bg-[#FFFFFF] p-4 lg:p-6 rounded-[10px] h-auto transition-all">
   
   <div className='flex flex-col lg:flex-row  items-center justify-evenly '>
     <Image
@@ -50,7 +51,7 @@ export default function Home() {
     />
     <div className="flex flex-col justify-center text-center lg:text-left ">
       <h3 className="text-4xl font-semibold mb-4">AI Cloud Lab</h3>
-      <p className="text-white mb-6 text-lg opacity-60">
+      <p className="text-black mb-6 text-lg opacity-60">
         Seamless AI development, deployment and monitoring<br />
         in Cloud all through one interface!
       </p>
@@ -63,9 +64,9 @@ export default function Home() {
         </div>
  <div className="flex flex-wrap justify-center mb-6">
       {data.aicloudlab_features.map((box, index) => (
-         <div key={index} className="w-full  md:w-[40%]  border-2 rounded-[10px] p-8 bg-gray-800 m-4 md:min-h-[200px]">
+         <div key={index} className="w-full  md:w-[40%]  border-2 rounded-[10px] p-8  m-4 md:min-h-[200px]">
          <div className="mb-2 text-2xl font-semibold">{box.title}</div>
-         <div className=' text-gray-200 font-normal'>{box.description}</div>
+         <div className=' text-black opacity-60 font-normal'>{box.description}</div>
        </div>
       ))}
     </div>
@@ -86,7 +87,7 @@ export default function Home() {
         id="team"
         className="w-full min-h-screen flex flex-col items-center justify-center max-w-7xl mx-auto py-12 px-4"
       >
-        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Meet Our Team</h2>
+        <h2 className="text-4xl font-bold text-center mb-20 text-black mt-28 lg:mt-0">Meet Our Team</h2>
         <div className="flex flex-wrap justify-center gap-10 max-w-[60rem]">
           {teamMembers.map((member) => (
             <TeamMemberCard
@@ -106,7 +107,7 @@ export default function Home() {
         id="advisors"
         className="w-full min-h-screen flex flex-col items-center justify-center max-w-7xl mx-auto py-12 px-4"
       >
-        <h2 className="text-4xl font-bold text-center mb-20 text-gray-500 mt-28 lg:mt-0">Meet Our Advisors</h2>
+        <h2 className="text-4xl font-bold text-center mb-20 text-black mt-28 lg:mt-0">Meet Our Advisors</h2>
         <div className="flex flex-wrap justify-center gap-10">
           {advisors.map((member) => (
             <TeamMemberCard
@@ -121,12 +122,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <div className="w-full bg-gray-900 min-h-screen max-w-7xl">
+      {/* <div className="w-full bg-[#FFFFFF] min-h-screen max-w-7xl">
       <FeedBack />
     </div> */}
 
       {/* Footer Section */}
-      <section className="w-full h-[50vh] relative overflow-hidden">
+      {/* <section className="w-full h-[50vh] relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src={footerBackgroundImage}
@@ -136,7 +137,7 @@ export default function Home() {
             quality={100}
           />
         </div>
-      </section>
+      </section> */}
 
       <ScrollToTopButton />
     </div>
