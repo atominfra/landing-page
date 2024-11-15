@@ -1,5 +1,6 @@
 import footerBackgroundImage from '@/assets/layered-waves-footer.svg';
 import FeedBack from '@/components/feedback';
+import Footer from '@/components/Footer';
 import NavbarSimple from '@/components/navBar';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import TeamMemberCard from '@/components/teamCards';
@@ -126,19 +127,9 @@ export default function Home() {
     </div> */}
 
       {/* Footer Section */}
-      <section className="w-full h-[50vh] relative overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src={footerBackgroundImage}
-            alt="Section divider image"
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-          />
-        </div>
-      </section>
+      <Footer/>
 
-      <ScrollToTopButton />
+      {/* <ScrollToTopButton /> */}
     </div>
   );
 }
