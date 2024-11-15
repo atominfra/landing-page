@@ -36,7 +36,7 @@ const NavbarSimple = (props) => {
   );
 
   return (
-    <div className="shadow-lg m-0">
+    <div className="border-b border-gray-800 m-0">
       <Navbar
         color="transparent"
         className=" max-w-[100vw] lg:max-w-[89vw] bg-gray-900 mx-auto py-3 flex items-center justify-between  "

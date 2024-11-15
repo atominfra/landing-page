@@ -1,5 +1,6 @@
 import footerBackgroundImage from '@/assets/layered-waves-footer.svg';
 import FeedBack from '@/components/feedback';
+import Footer from '@/components/footer';
 import NavbarSimple from '@/components/navBar';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import SocialPill from '@/components/SocialPill';
@@ -7,6 +8,7 @@ import TeamMemberCard from '@/components/teamCards';
 import { default as data, default as teamData } from '@/utils/teamData';
 import Image from 'next/image';
 import React from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { GoLinkExternal } from "react-icons/go";
 export default function Home() {
   const { teamMembers, advisors } = teamData;
@@ -118,24 +120,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <div className="w-full bg-gray-900 min-h-screen max-w-7xl">
-      <FeedBack />
-    </div> */}
+      <div className='w-full bg-gray-800 h-[1px]'></div>
       {/* Footer Section */}
-      <section className="flex justify-between items-center h-[25vh] w-full border-t-[6px] border-[#29303E] min-h-[180px] md:px-[8vw] px-[2vw] text-base md:text-lg">
-        <div className="p-2">
-          <h1>Ambition Forge Pvt. Ltd</h1>
-          <h1> Indiranagar, Bangalore<br/>
-          560038
-          </h1>
-        </div>
-        <div className='space-y-[10.2px] md:space-y-[12.2px] flex-wrap justify-items-end p-2'>
-          <h1 className='no-underline'>
-            <a href='mailto:hello@atominfra.com'>hello@atominfra.com</a>
-          </h1>
-          <div className='max-w-[100px]'><SocialPill/></div>
-        </div>
-      </section>
+      <Footer/>
     </div>
   );
 }
+
