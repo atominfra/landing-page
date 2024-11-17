@@ -18,17 +18,17 @@ const NavbarSimple = (props) => {
   const navList = (
     <ul className="flex flex-col gap-4 p-6 lg:flex-row lg:items-center lg:gap-6 lg:p-0 " onClick={closeDrawer}>
       <Typography as="li" color="blue-gray" className="p-1 font-light">
-        <a href="#products" className="flex items-center text-gray-300 hover:text-white" onClick={closeDrawer}>
+        <a href="#products" className="flex items-center text-black hover:text-black" onClick={closeDrawer}>
           Products
         </a>
       </Typography>
       <Typography as="li" color="blue-gray" className="p-1 font-light">
-        <a href="#team" className="flex items-center text-gray-300 hover:text-white" onClick={closeDrawer}>
+        <a href="#team" className="flex items-center text-black hover:text-black" onClick={closeDrawer}>
           Team
         </a>
       </Typography>
       <Typography as="li" color="blue-gray" className="p-1 font-light" onClick={closeDrawer}>
-        <a href="#advisors" className="flex items-center text-gray-300 hover:text-white">
+        <a href="#advisors" className="flex items-center text-black hover:text-black">
           Advisors
         </a>
       </Typography>
@@ -36,13 +36,13 @@ const NavbarSimple = (props) => {
   );
 
   return (
-    <div className="shadow-lg m-0">
+    <div className="border-b m-0">
       <Navbar
         color="transparent"
-        className=" max-w-[100vw] lg:max-w-[89vw] bg-gray-900 mx-auto py-3 flex items-center justify-between  "
+        className=" max-w-[100vw] lg:max-w-[89vw] bg-[#FFFFFF] mx-auto py-3 flex items-center justify-between  "
       >
-        <Typography className="m-4 text-white-900 text-xl md:text-3xl font-bold font-baloo">
-          <a href="#" className="flex items-center text-gray-300 hover:text-white" >
+        <Typography className="m-4 text-black-900 text-xl md:text-3xl font-bold font-baloo">
+          <a href="#" className="flex items-center text-black hover:text-black" >
             AtomInfra
           </a>
         </Typography>
@@ -53,7 +53,7 @@ const NavbarSimple = (props) => {
       </div>
         <span
           variant="text"
-          className="mr-4 text-xl text-gray-300 hover:text-white lg:hidden"
+          className="mr-4 text-xl text-black hover:text-black lg:hidden"
           ripple={false}
           onClick={() => setOpenDrawer(true)}
         >
@@ -62,11 +62,11 @@ const NavbarSimple = (props) => {
       </Navbar>
 
       {/* Drawer for mobile menu */}
-      <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)} anchor="right" className="bg-gray-800 flex border border-gray-800 border-r-gray-900">
+      <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)} anchor="right" className="bg-[#FFFFFF] flex border border-gray-800 border-r-gray-900">
         {/* <div className="flex flex-col items-end p-4 ">
           <span
             variant="text"
-            className="mr-4 text-xl text-gray-500 hover:text-gray-900"
+            className="mr-4 text-xl text-black hover:text-gray-900"
             ripple={false}
             onClick={() => setOpenDrawer(false)}
           >
@@ -75,8 +75,8 @@ const NavbarSimple = (props) => {
         </div> */}
         <div className="container mx-auto flex flex-col mt-[100px] justify-between ">
         <div>
-        <Typography className=" text-white-900 text-2xl md:text-3xl font-bold font-baloo px-7" onClick={closeDrawer}>
-          <a href="#" className="flex items-center text-gray-300 hover:text-white ">
+        <Typography className=" text-black-900 text-2xl md:text-3xl font-bold font-baloo px-7" onClick={closeDrawer}>
+          <a href="#" className="flex items-center text-black hover:text-black ">
             AtomInfra
           </a>
         </Typography>
@@ -89,7 +89,7 @@ const NavbarSimple = (props) => {
             id='sidebar'
             className='flex h-full items-center w-0 '
         >
-            <div className='absolute right-0 mr-4 w-2 h-[100px] rounded-full bg-gray-900' />
+            <div className='absolute right-0 mr-4 w-2 h-[100px] rounded-full bg-[#FFFFFF]' />
         </div>
       </Drawer>
     </div>
