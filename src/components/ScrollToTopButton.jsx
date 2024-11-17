@@ -29,7 +29,7 @@ export default function ScrollToTopButton() {
   return (
     <button
     onClick={scrollToTop}
-    className="fixed bottom-14 right-14 bg-[#009ded] text-white w-12 h-12 rounded-full shadow-lg hover:bg-[#3591c0] flex items-center justify-center"
+    className="fixed bottom-5 right-5 bg-[#009ded] text-white w-12 h-12 rounded-full shadow-lg hover:bg-[#3591c0] flex items-center justify-center"
     aria-label="Back to top"
   >
     ↑
