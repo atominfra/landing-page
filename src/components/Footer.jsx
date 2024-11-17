@@ -7,7 +7,7 @@ export default function Footer(){
 
       <section className='h-[20%] py-10 border-t  md:text-center  text-gray-600 text-base font-normal '>
         <div>
-          2024 Ambition Forge Pvt. Ltd. All rights Reserved
+          2024 Ambition Forge Pvt. Ltd. All Rights Reserved
         </div>
       
       </section>

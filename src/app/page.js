@@ -18,7 +18,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="w-full text-center h-screen flex flex-col items-center justify-center pt-10 md:pt-38 py-12 px-4 relative">
+      <section className="w-full text-center h-screen md:h-screen flex flex-col items-center justify-center  relative font-light px-1">
         {/* <div className="absolute inset-0"
         style={{
           backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0) 82%, rgba(17, 24, 39, 1)),url('https://res.cloudinary.com/dy8hx2xrj/image/upload/v1731301690/blue-wave-surface-blockchain-technology-and-science-abstract-background-music-equalizer-of-hexagon-network-wire-frame-illumination-texture-pattern-new-technology-particle-digital-concept-wallpaper-vector_1_uhhiel.png')",
@@ -26,11 +26,13 @@ export default function Home() {
           backgroundPosition: "center",
           opacity: 0.10 // Adjust opacity as needed (0.5 = 50%)
           }}></div> */}
-        <div className="w-[90w] md:w-[60vw] h-50 relative font-light">
+        {/* <div className="w-[90w] md:w-[60vw] relative font-light"> */}
           <p className="text-[32px] md:text-6xl text-black font-regular text-balance font-baloo z-10">
-          Making <span className="font-poppins font-medium bg-clip-text text-transparent"style={{backgroundImage: "linear-gradient(to right, #3591C0, #89d4fa)"}}>AI</span> deployment super-fast and affordable!
+           Making 
+          <p><span className="font-poppins font-medium bg-clip-text text-transparent"style={{backgroundImage: "linear-gradient(to right, #3591C0, #89d4fa)"}}>AI</span> deployment </p>
+          super-fast & affordable!
           </p>
-        </div>
+        {/* </div> */}
       </section>
       {/*Coming Soon section*/}
       {/* Coming Soon section */}
