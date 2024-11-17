@@ -1,5 +1,6 @@
 import footerBackgroundImage from '@/assets/layered-waves-footer.svg';
 import FeedBack from '@/components/feedback';
+import Footer from '@/components/Footer';
 import NavbarSimple from '@/components/navBar';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import TeamMemberCard from '@/components/teamCards';
@@ -139,7 +140,8 @@ export default function Home() {
         </div>
       </section> */}
 
-      <ScrollToTopButton />
+      {/* <ScrollToTopButton /> */}
+      <Footer/>
     </div>
   );
 }
