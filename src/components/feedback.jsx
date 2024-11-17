@@ -55,13 +55,13 @@ const FeedBack = () => {
   // }
 
   return (
-    <div className=" w-full flex flex-col md:flex-row items-center justify-evenly p-8 bg-gray-900 min-h-screen max-w-7xl">
+    <div className=" w-full flex flex-col md:flex-row items-center justify-evenly p-8 bg-[#FFFFFF] min-h-screen max-w-7xl">
           <Image alt="messageIcon" src={messageIcon} width={174} height={169} />
       <form
         // onSubmit={handleSubmit}
-        className="md:w-2/3 w-full max-w-lg bg-gray-900 p-8 rounded-lg shadow-lg"
+        className="md:w-2/3 w-full max-w-lg bg-[#FFFFFF] p-8 rounded-lg shadow-lg"
       >
-        <h2 className="text-2xl font-semibold text-white mb-6 text-start">
+        <h2 className="text-2xl font-semibold text-black mb-6 text-start">
           Send us a Message/Feedback
         </h2>
 
@@ -72,7 +72,7 @@ const FeedBack = () => {
             value={formData.name}
             onChange={handleChange}
             placeholder="Your Name/Organization Name"
-            className="bg-gray-900 border border-gray-600 rounded-[10px] p-3 text-white w-full mb-4 md:mb-0"
+            className="bg-[#FFFFFF] border border-gray-600 rounded-[10px] p-3 text-black w-full mb-4 md:mb-0"
           />
           <input
             type="email"
@@ -80,7 +80,7 @@ const FeedBack = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder="E-mail address"
-            className="bg-gray-900 border border-gray-600 rounded-[10px] p-3 text-white w-full"
+            className="bg-[#FFFFFF] border border-gray-600 rounded-[10px] p-3 text-black w-full"
           />
         </div>
 
@@ -90,7 +90,7 @@ const FeedBack = () => {
           value={formData.subject}
           onChange={handleChange}
           placeholder="Subject"
-          className="bg-gray-900 border border-gray-600 rounded-[10px] p-3 text-white w-full mb-4"
+          className="bg-[#FFFFFF] border border-gray-600 rounded-[10px] p-3 text-black w-full mb-4"
         />
 
         <textarea
@@ -98,14 +98,14 @@ const FeedBack = () => {
           value={formData.message}
           onChange={handleChange}
           placeholder="Message"
-          className=" border bg-gray-900 border-gray-600 rounded-[10px] p-3 text-white w-full mb-6 h-32"
+          className=" border bg-[#FFFFFF] border-gray-600 rounded-[10px] p-3 text-black w-full mb-6 h-32"
         ></textarea>
 
         <button
           title='disabled'
           type="submit"
           disabled={true}
-          className="w-full bg-gray-600 hover:cursor-not-allowed text-white font-semibold py-3 rounded-[10px] transition duration-300"
+          className="w-full bg-gray-600 hover:cursor-not-allowed text-black font-semibold py-3 rounded-[10px] transition duration-300"
         >
           {isLoading === true ? (
             <div className="flex justify-center">
