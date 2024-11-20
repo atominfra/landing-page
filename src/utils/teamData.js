@@ -30,6 +30,12 @@ const teamData = {
       photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1730966072/swastik_1_cropped_odlm5m.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/swastik-bhowmick-24169b224/#/',
     },
+    {
+      name: 'Manav Gora',
+      role: 'Founding Member, AI',
+      photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1732134776/WhatsApp_Image_2024-11-20_at_21.45.56_cropped_jn2zp5.jpg',
+      linkedinUrl: 'https://www.linkedin.com/in/manav-gora/',
+    }
   ],
   advisors: [
     {
