@@ -29,7 +29,7 @@ export default function Home() {
         {/* <div className="w-[90w] md:w-[60vw] relative font-light"> */}
           <p className="text-[32px] md:text-6xl text-black font-regular text-balance font-baloo ">
            Making 
-          <p><span className="font-poppins font-medium bg-clip-text text-transparent"style={{backgroundImage: "linear-gradient(to right, #3591C0, #89d4fa)"}}>AI</span> deployment </p>
+          <span><span className="font-poppins font-medium bg-clip-text text-transparent"style={{backgroundImage: "linear-gradient(to right, #3591C0, #89d4fa)"}}>AI</span> deployment </span>
           super-fast & affordable!
           </p>
         {/* </div> */}
