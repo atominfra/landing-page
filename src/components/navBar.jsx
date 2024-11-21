@@ -62,7 +62,7 @@ const NavbarSimple = (props) => {
       </Navbar>
 
       {/* Drawer for mobile menu */}
-      <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)} anchor="right" className="bg-[#FFFFFF] flex border border-gray-800 border-r-gray-900">
+      <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)} anchor="right" className="bg-[#FFFFFF] flex border ">
         {/* <div className="flex flex-col items-end p-4 ">
           <span
             variant="text"
