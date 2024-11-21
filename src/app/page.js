@@ -27,11 +27,11 @@ export default function Home() {
           opacity: 0.10 // Adjust opacity as needed (0.5 = 50%)
           }}></div> */}
         {/* <div className="w-[90w] md:w-[60vw] relative font-light"> */}
-          <p className="text-[32px] md:text-6xl text-black font-regular text-balance font-baloo ">
+          <div className="text-[32px] md:text-6xl text-black font-regular text-balance font-baloo ">
            Making 
           <p><span className="font-poppins font-medium bg-clip-text text-transparent"style={{backgroundImage: "linear-gradient(to right, #3591C0, #89d4fa)"}}>AI</span> deployment </p>
           super-fast & affordable!
-          </p>
+          </div>
         {/* </div> */}
       </section>
       {/*Coming Soon section*/}
