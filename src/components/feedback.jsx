@@ -56,14 +56,14 @@ const FeedBack = () => {
   }
 
   return (
-    <div>
+    <div className='mb-12'>
       <div className="flex flex-col md:flex-row items-center justify-evenly p-8 bg-[#FFFFFF] max-w-7xl">
-        <Image className='hidden md:block' alt="messageIcon" src={messageIcon} width={174} height={169} />
+        <Image className='hidden md:block' alt="messageIcon" src={messageIcon} width={144} height={138} />
         <form
           onSubmit={handleSubmit}
           className="md:w-2/3 w-full max-w-lg bg-[#FFFFFF] p-8 rounded-lg "
         >
-          <h2 className="text-4xl text-black  my-8 lg:mt-0">Contact Us</h2>
+          <h2 className="text-[1.72rem] text-black font-semibold my-6 lg:mt-0 text-center md:text-left">Contact Us</h2>
           <div className="flex flex-col md:flex-row md:space-x-4 my-4">
             <input
               type="text"
