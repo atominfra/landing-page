@@ -8,6 +8,8 @@ import { default as data, default as teamData } from '@/utils/teamData';
 import Image from 'next/image';
 import React from 'react';
 import { GoLinkExternal } from "react-icons/go";
+import e2e from "@/assets/e2e.png"
+import blume from "@/assets/blume.png"
 export default function Home() {
   const { teamMembers, advisors } = teamData;
 
@@ -35,7 +37,17 @@ export default function Home() {
         {/* </div> */}
       </section>
       {/*Coming Soon section*/}
-      {/* Coming Soon section */}
+      <section className='w-full h-[50vh] flex flex-col items-center  max-w-6xl mx-auto py-12 px-4'>
+        <h2 className="text-4xl h-[20vh] font-bold text-center text-black ">Our Partners</h2>
+          <div className='h-[30vh]'>
+          <Image
+          alt='e2e'
+          src={e2e}
+          width={110}
+          height={75}
+          />
+          </div>
+      </section>
 <section
   id="products"
   className="w-full min-h-screen flex flex-col items-center justify-center max-w-6xl mx-auto py-12 px-4"
@@ -82,7 +94,17 @@ export default function Home() {
   </div>
 </section>
 
-
+<section className='w-full h-[50vh] flex flex-col items-center  max-w-6xl mx-auto py-12 px-4'>
+        <h2 className="text-4xl h-[20vh] font-bold text-center text-black ">Our Customers</h2>
+          <div className='h-[30vh]'>
+          <Image
+          alt='blume'
+          src={blume}
+          width={192}
+          height={85}
+          />
+          </div>
+      </section>
 
 
       {/* Team Section */}
