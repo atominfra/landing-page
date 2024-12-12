@@ -19,7 +19,7 @@ export default function HeroSection() {
           </div>
           <div className="space-x-4">
             <div className="inline-block">
-            <a href={`${process.env.NEXT_AICLOUDLAB_URL}`} target='_blank' >
+            <a href={`${process.env.NEXT_PUBLIC_AICLOUDLAB_URL}`} target='_blank' >
               <Button size="lg" className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white">
                 Get Started
                 <ArrowRight className="ml-2 h-5 w-5" />
