@@ -56,6 +56,7 @@ export default function PrivacyPolicy() {
           <p className="mb-6">If you believe that any information we are holding on you is incorrect or incomplete, please write to 235 Binnamangala, 13th Cross Road, 2nd Stage, Indiranagar Bengaluru KARNATAKA 560038 or contact us as soon as possible. We will promptly correct any information found to be incorrect.</p>
           
           <p className="bg-blue-100 dark:bg-blue-900 p-4 rounded-lg"><strong>Disclaimer:</strong> The above content is created at AMBITION FORGE PRIVATE LIMITED&apos;s sole discretion. Razorpay shall not be liable for any content provided here and shall not be responsible for any claims and liability that may arise due to merchant&apos;s non-adherence to it.</p>
+
         </div>
       </main>
     </div>
