@@ -63,7 +63,7 @@ export default function ContactSection() {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl px-4  text-center lg:text-start">Get in Touch</h2>
             <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 px-4">
-              We're here to help and answer any question you might have. We look forward to hearing from you.
+            We&apos;re here to help and answer any question you might have. We look forward to hearing from you.
             </p>
             <div className="space-y-4 px-4">
               <div className="flex items-center space-x-3">
