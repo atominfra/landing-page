@@ -63,6 +63,7 @@ const FeedBack = () => {
           onSubmit={handleSubmit}
           className="md:w-2/3 w-full max-w-lg bg-[#FFFFFF] p-8 rounded-lg "
         >
+          
           <h2 className="text-[1.72rem] text-black font-semibold my-6 lg:mt-0 text-center md:text-left">Contact Us</h2>
           <div className="flex flex-col md:flex-row md:space-x-4 my-4">
             <input

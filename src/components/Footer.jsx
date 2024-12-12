@@ -1,14 +1,24 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Link from "next/link"
 
-export default function Footer(){
-
-  return <section className="flex justify-between w-[90vw] max-w-7xl items-center  md:w-full   md:px-[8vw] px-[2vw] text-base md:text-lg ">
-  <div className=' w-full '>
-      <section className='h-[20%] py-10 border-t  md:text-center  text-gray-600 text-base font-normal '>
-        <div>
-          2024 Ambition Forge Pvt. Ltd. All Rights Reserved
+export default function Footer() {
+  return (
+    <footer className="w-full py-6 bg-gradient-to-t from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 border-t border-gray-200 dark:border-gray-800">
+      <div className="container px-4 md:px-6">
+        <div className="flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+          <p className="text-center text-sm text-gray-500 dark:text-gray-400 md:text-left">
+            © 2024 AtomInfra. All rights reserved.
+          </p>
+          <nav className="flex gap-4 sm:gap-6">
+            <Link className="text-sm font-medium text-gray-500 hover:text-blue-600 transition-colors dark:text-gray-400 dark:hover:text-blue-400" href="/terms-of-service">
+              Terms of Service
+            </Link>
+            <Link className="text-sm font-medium text-gray-500 hover:text-blue-600 transition-colors dark:text-gray-400 dark:hover:text-blue-400" href="/privacy-policy">
+              Privacy Policy
+            </Link>
+          </nav>
         </div>
-      </section>
-  </div>
-</section>
+      </div>
+    </footer>
+  )
 }
+

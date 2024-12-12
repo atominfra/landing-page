@@ -4,13 +4,40 @@ import Footer from '@/components/Footer';
 import NavbarSimple from '@/components/navBar';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import TeamMemberCard from '@/components/teamCards';
+import { Button } from '@/components/ui/button';
 import { default as data, default as teamData } from '@/utils/teamData';
 import Image from 'next/image';
 import React from 'react';
 import { GoLinkExternal } from "react-icons/go";
+import { ArrowRight } from 'lucide-react'
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Cpu, Gauge, Lock, BarChart } from 'lucide-react'
+import ContactSection from '@/components/contact-section';
+
 export default function Home() {
   const { teamMembers, advisors } = teamData;
-
+  const features = [
+    {
+      icon: Cpu,
+      title: "Compute",
+      description: "Access to high-performance GPUs and CPUs for training and inference"
+    },
+    {
+      icon: Lock,
+      title: "Security",
+      description: "Enterprise-grade security with data encryption and access controls"
+    },
+    {
+      icon: Gauge,
+      title: "Auto-scaling",
+      description: "Dynamic resource allocation based on workload demands"
+    },
+    {
+      icon: BarChart,
+      title: "Monitoring",
+      description: "Real-time metrics and performance analytics"
+    }
+  ]
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#FFFFFF] text-black font-sans">
       <header className="w-full z-10 fixed top-0 bg-[#FFFFFF]">
@@ -19,78 +46,58 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="w-full text-center h-screen md:h-screen flex flex-col items-center justify-center  relative font-light px-1">
-        {/* <div className="absolute inset-0"
-        style={{
-          backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0) 82%, rgba(17, 24, 39, 1)),url('https://res.cloudinary.com/dy8hx2xrj/image/upload/v1731301690/blue-wave-surface-blockchain-technology-and-science-abstract-background-music-equalizer-of-hexagon-network-wire-frame-illumination-texture-pattern-new-technology-particle-digital-concept-wallpaper-vector_1_uhhiel.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          opacity: 0.10 // Adjust opacity as needed (0.5 = 50%)
-          }}></div> */}
-        {/* <div className="w-[90w] md:w-[60vw] relative font-light"> */}
-          <div className="text-[32px] md:text-6xl text-black font-regular text-balance font-baloo ">
-           Making 
-          <p><span className="font-poppins font-medium bg-clip-text text-transparent"style={{backgroundImage: "linear-gradient(to right, #3591C0, #89d4fa)"}}>AI</span> deployment </p>
-          super-fast & affordable!
-          </div>
-        {/* </div> */}
-      </section>
-      {/*Coming Soon section*/}
-      {/* Coming Soon section */}
-<section
-  id="products"
-  className="w-full min-h-screen flex flex-col items-center justify-center max-w-6xl mx-auto py-12 px-4"
->
-  <h2 className="text-4xl font-bold text-center mb-20 text-black mt-28 lg:mt-0">Our Products</h2>
-  <div className="p-[6px] rounded-[10px] bg-inherit  w-[90vw] lg:w-[75vw]">
-  <div className="bg-[#FFFFFF] p-4 lg:p-6 rounded-[10px] h-auto transition-all">
-  
-  <div className='flex flex-col lg:flex-row  items-center justify-evenly '>
-    <Image
-    src="https://res.cloudinary.com/dy8hx2xrj/image/upload/v1730454166/New_Project_mdpjqy.png"
-      alt="AI cloud lab"
-      height={300}
-      width={400}
-      className="object-contain h-[14rem]  lg:h-[26rem] lg:w-[30rem]"
-    />
-    <div className="flex flex-col justify-center text-center lg:text-left ">
-      <h3 className="text-4xl font-semibold mb-4">AI Cloud Lab</h3>
-      <p className="text-black mb-6 text-lg opacity-60">
-        Seamless AI development, deployment and monitoring<br />
-        in Cloud all through one interface!
-      </p>
-      <a href={`${process.env.NEXT_AICLOUDLAB_URL}`} target='_blank' className='flex lg:block  justify-center'>
-      <button className=" bg-[#009ded]  text-white px-4 mb-6 py-2 w-[150px] rounded-full hover:bg-[#3591c0] transition-colors flex justify-center items-center " >
-        <div className='flex gap-1 font-bold'>Visit <GoLinkExternal className=' font-bold stroke-2 mt-1'/></div>
-      </button>
-        </a>
-      </div>
+      <div className="container mt-[10vh] px-4 md:px-6 flex flex-col items-center space-y-8">
+        <div className="flex flex-col items-center space-y-4 text-center">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+              Making{" "}
+              <span className="text-blue-600 dark:text-blue-400">AI</span>{" "}
+              deployment
+              <br />
+              super-fast & affordable
+            </h1>
+            <p className="mx-auto max-w-[700px] text-gray-500 font-normal md:text-xl dark:text-gray-400">
+              Committed to democratizing AI, we make cutting-edge deployment simple, accessible, and affordable for businesses of all sizes.
+            </p>
+            
         </div>
- <div className="flex flex-wrap justify-center mb-6">
-      {data.aicloudlab_features.map((box, index) => (
-         <div key={index} className="w-full  md:w-[40%]  border-2 rounded-[10px] p-8  m-4 md:min-h-[200px]">
-         <div className="mb-2 text-2xl font-semibold">{box.title}</div>
-         <div className=' text-black opacity-60 font-normal'>{box.description}</div>
-       </div>
-      ))}
-    </div>
-    </div>
-  <div>
-  
- 
-
-    </div>
-  </div>
-</section>
+        <div className='flex items-center justify-center gap-4 '>
+            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white">
+              Get Started
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+            <Button variant="outline" size="lg">Learn More</Button>
+        </div>
+      </div>
+     </section>
 
 
-
+      <section
+        id="products"
+        className="w-full  flex flex-col items-center justify-center max-w-6xl mx-auto py-12 px-4"
+      >
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          {features.map((feature, index) => (
+            <Card key={index} className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-800 dark:to-gray-700 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-all">
+              <CardHeader>
+                <feature.icon className="h-10 w-10 text-blue-600 dark:text-blue-400 mb-2" />
+                <CardTitle className="text-blue-900 dark:text-blue-100">{feature.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 dark:text-gray-300">{feature.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
 
       {/* Team Section */}
       <section
         id="team"
-        className="w-full min-h-screen flex flex-col items-center justify-center max-w-7xl mx-auto py-12 px-4"
+        className="w-full flex flex-col items-center justify-center max-w-7xl mx-auto py-12 px-4"
       >
-        <h2 className="text-4xl font-bold text-center mb-20 text-black mt-28 lg:mt-0">Meet Our Team</h2>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl  mb-20">Meet Our Team</h2>
+
+        {/* <h2 className="text-4xl font-bold text-center mb-20 text-black mt-28 lg:mt-0">Meet Our Team</h2> */}
         <div className="flex flex-wrap justify-center gap-10 max-w-[60rem]">
           {teamMembers.map((member) => (
             <TeamMemberCard
@@ -108,9 +115,9 @@ export default function Home() {
       {/* Advisor Section */}
       <section
         id="advisors"
-        className="w-full min-h-screen flex flex-col items-center justify-center max-w-7xl mx-auto py-12 px-4"
+        className="w-full flex flex-col items-center justify-center max-w-7xl mx-auto py-12 px-4"
       >
-        <h2 className="text-4xl font-bold text-center mb-20 text-black mt-28 lg:mt-0">Meet Our Advisors</h2>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl  mb-20">Meet Our Advisors</h2>
         <div className="flex flex-wrap justify-center gap-10">
           {advisors.map((member) => (
             <TeamMemberCard
@@ -126,7 +133,8 @@ export default function Home() {
       </section>
 
       <div className="w-full bg-[#FFFFFF] max-w-7xl">
-      <FeedBack />
+      {/* <FeedBack /> */}
+      <ContactSection/>
     </div>
 
       {/* Footer Section */}
