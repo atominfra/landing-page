@@ -61,11 +61,11 @@ export default function ContactSection() {
       <div className="container px-4 md:px-6 max-w-7xl">
         <div className="grid gap-6 lg:grid-cols-2">
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h2>
-            <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl px-4  text-center lg:text-start">Get in Touch</h2>
+            <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 px-4">
               We're here to help and answer any question you might have. We look forward to hearing from you.
             </p>
-            <div className="space-y-4">
+            <div className="space-y-4 px-4">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-500" />
                 <span>contact@atominfra.com</span>
@@ -80,7 +80,7 @@ export default function ContactSection() {
           </div>
           <Card className="bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-gray-700 border-none shadow-lg">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold">Send us a Message</CardTitle>
+              <CardTitle className="text-2xl font-bold text-center lg:text-start">Send us a Message</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-4">
