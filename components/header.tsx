@@ -36,15 +36,6 @@ export default function Header() {
 
   const navList = (
     <ul className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-6">
-      <li className="hidden lg:block">
-        <Link
-          href="#ai-cloud-lab"
-          className="text-sm   font-medium hover:text-blue-600 transition-colors"
-          onClick={closeMenu}
-        >
-          AI Cloud Lab
-        </Link>
-      </li>
       <li>
         <Link
           href="#team"
