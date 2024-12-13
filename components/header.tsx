@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { Github, Linkedin } from "lucide-react";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -7,6 +7,7 @@ import { RxCross2 } from "react-icons/rx";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navRef = useRef<HTMLDivElement | null>(null);
 
   const handleWindowResize = () => {
     if (window.innerWidth >= 1024) {
@@ -14,38 +15,72 @@ export default function Header() {
     }
   };
 
+  const handleClickOutside = (event: MouseEvent) => {
+    if (navRef.current && !navRef.current.contains(event.target as Node)) {
+      setMenuOpen(false);
+    }
+  };
+  
+
   useEffect(() => {
     window.addEventListener("resize", handleWindowResize);
+    document.addEventListener("mousedown", handleClickOutside);
+
     return () => {
       window.removeEventListener("resize", handleWindowResize);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
+  const closeMenu = () => setMenuOpen(false);
+
   const navList = (
     <ul className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-6">
-      <li>
-        <Link href="#ai-cloud-lab" className="text-sm font-medium hover:text-blue-600 transition-colors ">
+      <li className="hidden lg:block">
+        <Link
+          href="#ai-cloud-lab"
+          className="text-sm   font-medium hover:text-blue-600 transition-colors"
+          onClick={closeMenu}
+        >
           AI Cloud Lab
         </Link>
       </li>
       <li>
-        <Link href="#team" className="text-sm font-medium hover:text-blue-600 transition-colors">
+        <Link
+          href="#team"
+          className="text-sm font-medium hover:text-blue-600 transition-colors"
+          onClick={closeMenu}
+        >
           Team
         </Link>
       </li>
       <li>
-        <Link href="#contact" className="text-sm font-medium hover:text-blue-600 transition-colors">
+        <Link
+          href="#contact"
+          className="text-sm font-medium hover:text-blue-600 transition-colors"
+          onClick={closeMenu}
+        >
           Contact
         </Link>
       </li>
       <li>
-        <Link href="https://github.com/atominfra" target="_blank" rel="noopener noreferrer">
+        <Link
+          href="https://github.com/atominfra"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={closeMenu}
+        >
           <Github className="h-5 w-5" />
           <span className="sr-only">GitHub</span>
         </Link>
       </li>
       <li>
-        <Link href="https://linkedin.com/company/atominfra" target="_blank" rel="noopener noreferrer">
+        <Link
+          href="https://linkedin.com/company/atominfra"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={closeMenu}
+        >
           <Linkedin className="h-5 w-5" />
           <span className="sr-only">LinkedIn</span>
         </Link>
@@ -68,6 +103,7 @@ export default function Header() {
           </button>
         </div>
         <nav
+          ref={navRef}
           className={`lg:flex ${menuOpen ? "block" : "hidden"} absolute lg:static top-full right-0 lg:top-0 lg:right-0 w-full lg:w-auto bg-white dark:bg-gray-900 lg:bg-transparent shadow-lg lg:shadow-none p-4 lg:p-0 space-y-4 lg:space-y-0 lg:space-x-6`}
         >
           {navList}
