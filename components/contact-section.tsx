@@ -68,13 +68,13 @@ export default function ContactSection() {
             <div className="space-y-4 px-4">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-500" />
-                <span>contact@atominfra.com</span>
+                <span>hello@atominfra.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-blue-500" />
-                <span>Ambition Forge Pvt. Ltd.
+                <span>
                   Indiranagar, Bangalore
-                  560038</span>
+                  </span>
               </div>
             </div>
           </div>
