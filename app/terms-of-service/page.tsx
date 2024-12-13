@@ -29,7 +29,6 @@ export default function TermsOfService() {
             <li>We, shall be under no liability whatsoever in respect of any loss or damage arising directly or indirectly out of the decline of authorization for any Transaction, on Account of the Cardholder having exceeded the preset limit mutually agreed by us with our acquiring bank from time to time</li>
           </ul>
           
-          <p className="bg-blue-100 dark:bg-blue-900 p-4 rounded-lg"><strong>Disclaimer:</strong> The above content is created at AMBITION FORGE PRIVATE LIMITED&apos;s sole discretion. Razorpay shall not be liable for any content provided here and shall not be responsible for any claims and liability that may arise due to merchant&apos;s non-adherence to it.</p>
         </div>
       </main>
     </div>
