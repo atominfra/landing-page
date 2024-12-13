@@ -31,7 +31,7 @@ export default function AdvisorsSection() {
     <section id="team" className="w-full py-12 flex justify-center md:py-24 lg:py-32 bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-gray-800 ">
     <div className="container px-4 md:px-6 max-w-7xl">
       <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center text-black dark:text-white">
-        Our Team
+        Our Advisors
       </h2>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {advisors.map((advisor, index) => (
