@@ -9,7 +9,7 @@ export default function AdvisorsSection() {
   const advisors = [
     {
       name: 'Rahul Kulkarni',
-      role: 'Chief Technologist, Samagra',
+      role: 'Co-founder, DoNew and Chief Technologist, Samagra',
       photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1729233201/rahulKulkarni_zqdd9r.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/rahul10100/',
     },
