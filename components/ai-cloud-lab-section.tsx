@@ -34,9 +34,9 @@ export default function AICloudLabSection() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black dark:text-white">
             AI Cloud Lab
           </h2>
-          <p className="mt-4 text-lg text-gray-500 dark:text-gray-400 max-w-[900px] mx-auto">
+          {/* <p className="mt-4 text-lg text-gray-500 dark:text-gray-400 max-w-[900px] mx-auto">
             A cutting-edge platform designed to accelerate AI development and deployment with enterprise-grade infrastructure.
-          </p>
+          </p> */}
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
