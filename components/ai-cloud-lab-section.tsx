@@ -1,7 +1,7 @@
 'use client'
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Code, BarChart3, Layers, ArrowRightLeft } from 'lucide-react'
+import {  BarChart3, Layers, ArrowRightLeft } from 'lucide-react'
 
 export default function AICloudLabSection() {
   const features = [
