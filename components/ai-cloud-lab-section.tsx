@@ -5,25 +5,25 @@ import { Code, BarChart3, Layers, ArrowRightLeft } from 'lucide-react'
 
 export default function AICloudLabSection() {
   const features = [
-    {
-      icon: Code,
-      title: "Built for AI Engineers",
-      description: "Auto package and deploy jupyter notebooks, abstracting out all the complex, time-consuming tasks."
-    },
+    // {
+    //   icon: Code,
+    //   title: "Built for AI Engineers",
+    //   description: "Auto package and deploy jupyter notebooks, abstracting out all the complex, time-consuming tasks."
+    // },
     {
       icon: BarChart3,
-      title: "Built for Efficiency",
-      description: "Automatically distribute load among CPU and GPU, serving it to you through a single API."
+      title: "Provides Flexibility",
+      description: "Switch between compute providers easily as your needs change without being locked in."
     },
     {
       icon: Layers,
-      title: "Unified",
-      description: "All-in-one tool for Building, Training, Packaging, Deploying, Monitoring, and Auto-scaling AI."
+      title: "User-Friendly Interface",
+      description: "Manage deployments through a simple interface built for humans, not just engineers."
     },
     {
       icon: ArrowRightLeft,
-      title: "Portable",
-      description: "Seamless migration between providers, enabling you to choose the most cost-effective option."
+      title: "Cost Savings",
+      description: "Choose the most cost-effective provider and save money."
     }
   ]
 
@@ -38,12 +38,12 @@ export default function AICloudLabSection() {
             A cutting-edge platform designed to accelerate AI development and deployment with enterprise-grade infrastructure.
           </p>
         </div>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
             <Card key={index} className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-800 dark:to-gray-700 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-all">
               <CardHeader>
                 <feature.icon className="h-10 w-10 text-blue-600 dark:text-blue-400 mb-2" />
-                <CardTitle className="text-blue-900 dark:text-blue-100 text-[24px]">{feature.title}</CardTitle>
+                <CardTitle className="text-blue-900 dark:text-blue-100 text-[22px]">{feature.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300">{feature.description}</p>
