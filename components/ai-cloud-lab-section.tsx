@@ -2,7 +2,10 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import {  BarChart3, Layers, ArrowRightLeft } from 'lucide-react'
-
+import swapIcon from "@/app/assets/swap.png"
+import reduceCostIcon from "@/app/assets/reduce-cost.png"
+import easyUseIcon from "@/app/assets/easy-use.png"
+import Image from "next/image"
 export default function AICloudLabSection() {
   const features = [
     // {
@@ -11,17 +14,17 @@ export default function AICloudLabSection() {
     //   description: "Auto package and deploy jupyter notebooks, abstracting out all the complex, time-consuming tasks."
     // },
     {
-      icon: BarChart3,
+      icon: swapIcon,
       title: "Provides Flexibility",
       description: "Switch between compute providers easily as your needs change without being locked in."
     },
     {
-      icon: Layers,
+      icon: easyUseIcon,
       title: "User-Friendly Interface",
       description: "Manage deployments through a simple interface built for humans, not just engineers."
     },
     {
-      icon: ArrowRightLeft,
+      icon: reduceCostIcon,
       title: "Cost Savings",
       description: "Choose the most cost-effective provider and save money."
     }
@@ -32,7 +35,7 @@ export default function AICloudLabSection() {
       <div className="container px-4 md:px-6 max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black dark:text-white">
-            AI Cloud Lab
+            Why AtomInfra?
           </h2>
           {/* <p className="mt-4 text-lg text-gray-500 dark:text-gray-400 max-w-[900px] mx-auto">
             A cutting-edge platform designed to accelerate AI development and deployment with enterprise-grade infrastructure.
@@ -42,7 +45,14 @@ export default function AICloudLabSection() {
           {features.map((feature, index) => (
             <Card key={index} className="bg-gradient-to-b from-white to-blue-50 dark:from-gray-800 dark:to-gray-700 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-all">
               <CardHeader>
-                <feature.icon className="h-10 w-10 text-blue-600 dark:text-blue-400 mb-2" />
+                <Image
+                src={feature.icon}
+                alt={`${feature.icon}`}
+                width={100}
+                height={100}
+                className="h-10 w-10 text-blue-600 dark:text-blue-400 mb-2"
+                />
+                {/* <feature.icon className="h-10 w-10 text-blue-600 dark:text-blue-400 mb-2" /> */}
                 <CardTitle className="text-blue-900 dark:text-blue-100 text-[22px]">{feature.title}</CardTitle>
               </CardHeader>
               <CardContent>
