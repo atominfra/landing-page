@@ -27,7 +27,7 @@ export default function HeroSection() {
             </div>
             <div className="inline-block">
               <Button variant="outline" size="lg" asChild>
-                <Link href="#ai-cloud-lab">Learn More</Link>
+                <Link href="#why-atominfra">Learn More</Link>
               </Button>
             </div>
           </div>
