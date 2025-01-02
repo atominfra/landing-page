@@ -33,9 +33,9 @@ export default function AdvisorsSection() {
       <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center text-black dark:text-white">
         Our Advisors
       </h2>
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-wrap gap-8 justify-center">
         {advisors.map((advisor, index) => (
-          <Card key={index} className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-all">
+      <Card key={index} className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-all w-full max-w-[calc(33.333%-2rem)] min-w-[320px]">
             <CardHeader>
               <Image
                 src={advisor.photo}
