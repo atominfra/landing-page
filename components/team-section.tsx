@@ -53,7 +53,7 @@ export default function TeamSection() {
         </h2>
         <div className="flex flex-wrap gap-8 justify-center">
     {team.map((member, index) => (
-      <Card key={index} className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-all w-full max-w-[calc(33.333%-2rem)]">
+      <Card key={index} className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-all w-full max-w-[calc(33.333%-2rem)] min-w-[320px]">
         <CardHeader>
           <Image
             src={member.photo}
