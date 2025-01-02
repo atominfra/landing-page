@@ -5,7 +5,7 @@ import swapIcon from "@/app/assets/swap.png"
 import reduceCostIcon from "@/app/assets/reduce-cost.png"
 import easyUseIcon from "@/app/assets/easy-use.png"
 import Image from "next/image"
-export default function AICloudLabSection() {
+export default function FeaturesSection() {
   const features = [
     // {
     //   icon: Code,
@@ -30,7 +30,7 @@ export default function AICloudLabSection() {
   ]
 
   return (
-    <section id="ai-cloud-lab" className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-900 ">
+    <section id="why-atominfra" className="w-full flex justify-center py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-900 ">
       <div className="container px-4 md:px-6 max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black dark:text-white">

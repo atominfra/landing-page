@@ -1,7 +1,7 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import HeroSection from "@/components/hero-section"
-import AICloudLabSection from "@/components/ai-cloud-lab-section"
+import FeaturesSection from "@/components/featuresSection"
 import TeamSection from "@/components/team-section"
 import AdvisorsSection from "@/components/advisors-section"
 import ContactSection from "@/components/contact-section"
@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
-        <AICloudLabSection />
+        <FeaturesSection />
         <TeamSection />
         <AdvisorsSection />
         <ContactSection />
