@@ -1,7 +1,6 @@
 'use client'
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import {  BarChart3, Layers, ArrowRightLeft } from 'lucide-react'
 import swapIcon from "@/app/assets/swap.png"
 import reduceCostIcon from "@/app/assets/reduce-cost.png"
 import easyUseIcon from "@/app/assets/easy-use.png"
