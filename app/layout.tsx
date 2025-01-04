@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "AtomInfra",
-  description: "Making AI Accessible",
+  title: "Atom Infra | Democratising Compute",
+  description: "Seamlessly manage deployments across various providers through a consistent and user-friendly interface",
   icons: {
     icon: '/favicon.ico',
   },

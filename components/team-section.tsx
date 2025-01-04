@@ -26,7 +26,7 @@ export default function TeamSection() {
       linkedinUrl: 'https://www.linkedin.com/in/shryansh-chaudhary/',
     },
     {
-      name: 'Prabhmeeet Singh',
+      name: 'Prabhmeet Singh',
       role: 'Founding Member, Design',
       photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1728843295/WhatsApp_Image_2024-10-13_at_23.41.59_ndo34n.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/prabhmeet-singh-11446699w/',
