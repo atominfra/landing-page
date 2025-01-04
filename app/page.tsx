@@ -6,6 +6,7 @@ import TeamSection from "@/components/team-section"
 import AdvisorsSection from "@/components/advisors-section"
 import ContactSection from "@/components/contact-section"
 import { Toaster } from 'react-hot-toast'
+import PartnersSection from "@/components/partners-section"
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <FeaturesSection />
         <TeamSection />
         <AdvisorsSection />
+        <PartnersSection />
         <ContactSection />
       </main>
       <Footer />
