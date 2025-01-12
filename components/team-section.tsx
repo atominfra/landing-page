@@ -13,12 +13,6 @@ export default function TeamSection() {
       photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1728836228/karun_fan4bm.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/singhalkarun/',
     },
-    // {
-    //   name: 'Piyush Raj',
-    //   role: 'Founding Member, DevOps',
-    //   photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1728836223/piyush_aw5tqf.jpg',
-    //   linkedinUrl: 'https://www.linkedin.com/in/piyushraj-d3bug/',
-    // },
     {
       name: 'Shryansh',
       role: 'Founding Member, Frontend',
@@ -31,18 +25,6 @@ export default function TeamSection() {
       photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1728843295/WhatsApp_Image_2024-10-13_at_23.41.59_ndo34n.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/prabhmeet-singh-11446699w/',
     },
-    {
-      name: 'Swastik Bhowmick',
-      role: 'Founding Member, Backend',
-      photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1730966072/swastik_1_cropped_odlm5m.jpg',
-      linkedinUrl: 'https://www.linkedin.com/in/swastik-bhowmick-24169b224/#/',
-    },
-    // {
-    //   name: 'Manav Gora',
-    //   role: 'Founding Member, AI',
-    //   photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1732134776/WhatsApp_Image_2024-11-20_at_21.45.56_cropped_jn2zp5.jpg',
-    //   linkedinUrl: 'https://www.linkedin.com/in/manav-gora/',
-    // }
   ]
 
   return (
