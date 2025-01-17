@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Atom Infra | Democratising Compute",
+  title: "Atom Infra | Vercel for AI Deployments",
   description: "Seamlessly manage deployments across various providers through a consistent and user-friendly interface",
   icons: {
     icon: '/favicon.ico',

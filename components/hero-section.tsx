@@ -11,7 +11,7 @@ export default function HeroSection() {
         <div className="flex flex-col items-center space-y-8 text-center">
           <div className="space-y-4 max-w-3xl">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400 pb-2">
-              Democratising Compute            
+              Vercel for AI Deployments         
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-2xl/relaxed dark:text-gray-400">
               Seamlessly manage deployments across various providers through a consistent and user-friendly interface            </p>
