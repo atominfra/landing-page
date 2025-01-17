@@ -1,7 +1,6 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import HeroSection from "@/components/hero-section"
-import FeaturesSection from "@/components/featuresSection"
 import TeamSection from "@/components/team-section"
 import AdvisorsSection from "@/components/advisors-section"
 import ContactSection from "@/components/contact-section"
