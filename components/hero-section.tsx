@@ -21,15 +21,15 @@ export default function HeroSection() {
             <a href={`${process.env.NEXT_PUBLIC_AICLOUDLAB_URL}`} target='_blank' >
               <Button size="lg" className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white">
                 Get Started
-                <ArrowRight className="ml-2 h-5 w-5" />
+                {/* <ArrowRight className="ml-2 h-5 w-5" /> */}
               </Button>
               </a>
             </div>
-            <div className="inline-block">
+            {/* <div className="inline-block">
               <Button variant="outline" size="lg" asChild>
                 <Link href="#why-atominfra">Learn More</Link>
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
