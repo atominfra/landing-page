@@ -19,18 +19,18 @@ export default function TeamSection() {
       photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1728836215/shryansh_qfjiae.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/shryansh-chaudhary/',
     },
-    {
-      name: 'Prabhmeet Singh',
-      role: 'Founding Member, Design',
-      photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1728843295/WhatsApp_Image_2024-10-13_at_23.41.59_ndo34n.jpg',
-      linkedinUrl: 'https://www.linkedin.com/in/prabhmeet-singh-11446699w/',
-    },
-    {
-      name: 'Karan Gill',
-      role: 'Founding Member, Backend',
-      photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1737218545/karanGill_kh5qko.png',
-      linkedinUrl: 'https://www.linkedin.com/in/karan-gill-61353a261/',
-    },
+    // {
+    //   name: 'Prabhmeet Singh',
+    //   role: 'Founding Member, Design',
+    //   photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1728843295/WhatsApp_Image_2024-10-13_at_23.41.59_ndo34n.jpg',
+    //   linkedinUrl: 'https://www.linkedin.com/in/prabhmeet-singh-11446699w/',
+    // },
+    // {
+    //   name: 'Karan Gill',
+    //   role: 'Founding Member, Backend',
+    //   photo: 'https://res.cloudinary.com/dy8hx2xrj/image/upload/v1737218545/karanGill_kh5qko.png',
+    //   linkedinUrl: 'https://www.linkedin.com/in/karan-gill-61353a261/',
+    // },
   ]
 
   return (
