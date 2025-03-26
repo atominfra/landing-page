@@ -83,7 +83,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 flex justify-center border-b bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-gray-800 backdrop-blur-sm dark:border-gray-800">
       <div className="container flex h-16 items-center justify-between max-w-7xl">
-      <div className='flex items-center pl-4 lg:pl-0'>
+      <div className='flex items-center'>
           <Image
             src="https://res.cloudinary.com/dy8hx2xrj/image/upload/v1734099746/atominfra-logo_pmfxxq.png" 
             width={30}
